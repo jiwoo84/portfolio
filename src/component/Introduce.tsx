@@ -13,7 +13,7 @@ const Introduce: React.FC = () => {
         <h1>곽지우</h1>
         <div>
           <p>
-            문단, 영화, 연극, 마케팅 등 다양한 분야에서 다양한 사람과
+            문단, 영화, 연극, 마케팅 등 다양한 분야에서 다양한 사람들과
             일했습니다.
           </p>
           <p>
@@ -23,9 +23,7 @@ const Introduce: React.FC = () => {
           <p>
             쇼핑몰을 관리하며 웹 개발을 접했고, 흥미를 느껴 학습을 시작했습니다.
           </p>
-          <p>
-            UX를 중시하며 한 명도 이탈하지 않는 서비스를 만드는 것이 목표입니다.
-          </p>
+          <p>UX를 중시하며 유저 이탈이 적은 서비스를 만드는 것이 목표입니다.</p>
         </div>
         <div className="contact" style={{ display: "flex" }}>
           <a href="/곽지우.pdf" target="_blank">
