@@ -1,29 +1,17 @@
 import React, { FC } from "react";
-import styled from "styled-components";
-import { Icon } from "semantic-ui-react";
+import "tailwindcss/tailwind.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Introduce: React.FC = () => {
-  const Img = styled.img`
-    height: 200px;
-  `;
-  const Detail = styled.div``;
-  const Greeting = styled.div``;
-  const Name = styled.h1``;
-  const Describe = styled.div``;
-  const Contact = styled.div``;
-  const Tistory = styled.img`
-    width: 10px;
-  `;
-  const Mail = () => <Icon disabled name="mail" />;
-  const Github = () => <Icon disabled name="github" />;
-
   return (
     <>
-      <Img src="/농담곰.png" />
-      <Detail>
-        <Greeting>HI THERE! I'm a Front-End Web Developer.</Greeting>
-        <Name>곽지우</Name>
-        <Describe>
+      <img src="/농담곰.png" className="w-52" />
+      <div>
+        <div>HI THERE! I'm a Front-End Web Developer.</div>
+        <h1>곽지우</h1>
+        <div>
           <p>
             문단, 영화, 연극, 마케팅 등 다양한 분야에서 다양한 사람과
             일했습니다.
@@ -33,25 +21,35 @@ const Introduce: React.FC = () => {
             있습니다.
           </p>
           <p>
-            쇼핑몰을 관리하며 웹 개발을 알게 되었고, 흥미를 느껴 학습을
-            시작했습니다.
+            쇼핑몰을 관리하며 웹 개발을 접했고, 흥미를 느껴 학습을 시작했습니다.
           </p>
           <p>
-            UX를 중시해 한 명도 이탈하지 않는 서비스를 만드는 것이 목표입니다.
+            UX를 중시하며 한 명도 이탈하지 않는 서비스를 만드는 것이 목표입니다.
           </p>
-        </Describe>
-        <Contact>
-          <a href="matilto:wldn0804@gmail.com">
-            <Mail />
+        </div>
+        <div className="contact" style={{ display: "flex" }}>
+          <a href="/곽지우.pdf" target="_blank">
+            <button className="py-2 px-4 rounded-lg shadow-md text-white bg-blue-500">
+              Resume
+            </button>
           </a>
-          <a href="https://github.com/jiwoo84">
-            <Github />
-          </a>
-          <a href="https://jiwoo84.tistory.com/">
-            <Tistory src="/tistory.svg" />
-          </a>
-        </Contact>
-      </Detail>
+          <div style={{ display: "flex" }}>
+            <button>
+              <a href="https://matilto:wldn0804@gmail.com" target="_blank">
+                <FontAwesomeIcon icon={faEnvelope} size="2x" />
+              </a>
+            </button>
+            <button>
+              <a href="https://github.com/jiwoo84" target="_blank">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+            </button>
+            <a href="https://jiwoo84.tistory.com/" target="_blank">
+              <img src="tistory.svg" style={{ width: "20px" }} />
+            </a>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
