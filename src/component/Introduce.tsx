@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Introduce: React.FC = () => {
   return (
     <>
-      <img src="/농담곰.png" className="w-52" />
+      <img src="/얼굴사진.jpg" className="w-52" />
       <div>
         <div>HI THERE! I'm a Front-End Web Developer.</div>
         <h1>곽지우</h1>
