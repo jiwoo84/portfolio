@@ -8,7 +8,7 @@ const Container = tw.div`
 `;
 
 const SecondTitle = tw.h2`
- my-7 mx-auto text-xl font-bold bg-white rounded-full py-2 w-[30%] text-center shadow-lg 
+ my-7 mx-auto text-xl font-bold bg-white rounded-full py-2 w-[12rem] text-center shadow-lg 
 `;
 
 const Projects: React.FC = () => {
@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
       <Title title="Project" length="8" />
       <SecondTitle>개인 프로젝트</SecondTitle>
       <Project
-        imgScr={JSON.stringify(["/나도땀1.png", "/나도땀2.png"])}
+        imgsrc={JSON.stringify(["/나도땀1.png", "/나도땀2.png"])}
         title="포트폴리오 웹페이지"
         date="2023.03.24 ~ (1주)"
         describe={`초기 로딩 속도가 중요하기에 Next.js를 사용해 SSR 페이지를 구현했습니다.
@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
       <hr />
       <SecondTitle>팀 프로젝트</SecondTitle>
       <Project
-        imgScr={JSON.stringify([
+        imgsrc={JSON.stringify([
           "/나도땀1.png",
           "/나도땀2.png",
           "/나도땀3.png",

@@ -1,8 +1,9 @@
 import React from "react";
 import tw from "tailwind-styled-components";
+import ImgSlider from "./ImgSlider";
 
 interface ProjectProps {
-  imgScr: string;
+  imgsrc: string;
   title: string;
   date: string;
   features: string;
@@ -14,8 +15,20 @@ interface ProjectProps {
   deployment: string;
 }
 
+const ImgBox = tw.div`
+  relative h-56 overflow-hidden rounded-lg md:h-96
+`;
+const ProjectTitle = tw.h2``;
+const Date = tw.p``;
+const Describe = tw.div``;
+const ReadMe = tw.button``;
+const DetailBox = tw.div``;
+const DetailList = tw.div``;
+const DetailTitle = tw.div``;
+const DetailContent = tw.div``;
+
 const Project: React.FC<ProjectProps> = ({
-  imgScr,
+  imgsrc,
   title,
   date,
   describe,
@@ -28,11 +41,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   return (
     <>
-      <ImgBox>
-        {JSON.parse(imgScr).map((src) => (
-          <img src={src} />
-        ))}
-      </ImgBox>
+      <ImgSlider imgsrc={imgsrc} />
       <ProjectTitle>{title}</ProjectTitle>
       <Date>{date}</Date>
       <Describe>{describe}</Describe>
@@ -70,15 +79,5 @@ const Project: React.FC<ProjectProps> = ({
     </>
   );
 };
-
-const ImgBox = tw.div``;
-const ProjectTitle = tw.h2``;
-const Date = tw.p``;
-const Describe = tw.div``;
-const ReadMe = tw.button``;
-const DetailBox = tw.div``;
-const DetailList = tw.div``;
-const DetailTitle = tw.div``;
-const DetailContent = tw.div``;
 
 export default Project;

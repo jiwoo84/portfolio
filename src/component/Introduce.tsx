@@ -53,10 +53,10 @@ const Introduce: React.FC = () => {
       <Name>곽지우</Name>
       <Describe>
         <DescribeList>
-          <DescribeList>
-            <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;10인 미만 기업에서 팀 리더를 맡은 경험이 있습니다.
-          </DescribeList>
+          <FontAwesomeIcon icon={faCheck} size="xs" />
+          &nbsp;10인 미만 기업에서 팀 리더를 맡은 경험이 있습니다.
+        </DescribeList>
+        <DescribeList>
           <FontAwesomeIcon icon={faCheck} size="xs" />
           &nbsp;마케팅, 연극, 영화계 등 다양한 곳에서 다양한 사람들과
           일했습니다.
