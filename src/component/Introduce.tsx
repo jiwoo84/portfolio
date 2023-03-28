@@ -6,14 +6,14 @@ import { faEnvelope, faCheck } from "@fortawesome/free-solid-svg-icons";
 import tw from "tailwind-styled-components";
 
 const Container = tw.div`
-  flex flex-col justify-center items-center p-8
+  flex flex-col justify-center items-center px-[10%] h-[100vh]
 `;
 const Img = tw.img`
   mb-5 rounded-[100%]
 `;
 const Greeting = tw.h1``;
 const Name = tw.p`
-  text-3xl mt-5 font-bold
+  text-5xl mt-5 font-bold
 `;
 const Describe = tw.ol`
   my-10
@@ -55,12 +55,11 @@ const Introduce: React.FC = () => {
         <DescribeList>
           <DescribeList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;10인 미만 기업에서 문제 해결력을 인정받아 팀 리더를 맡은
-            경험이 있습니다.
+            &nbsp;10인 미만 기업에서 팀 리더를 맡은 경험이 있습니다.
           </DescribeList>
           <FontAwesomeIcon icon={faCheck} size="xs" />
-          &nbsp;마케팅, 연극, 영화계 등 다양한 곳에서 일하며 커뮤니케이션 능력을
-          갖췄습니다.
+          &nbsp;마케팅, 연극, 영화계 등 다양한 곳에서 다양한 사람들과
+          일했습니다.
         </DescribeList>
         <DescribeList>
           <FontAwesomeIcon icon={faCheck} size="xs" />

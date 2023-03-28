@@ -3,13 +3,12 @@ import Education from "@/src/component/Education";
 import Skill from "@/src/component/Skill";
 import Introduce from "./Introduce";
 import Projects from "./Projects";
-import { FC } from "react";
 
 const Container = tw.div`
     flex
     flex-col
-    mt-5
     mx-auto
+    my-5
 `;
 
 const Content: React.FC = () => {

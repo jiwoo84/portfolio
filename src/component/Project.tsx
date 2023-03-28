@@ -1,50 +1,84 @@
 import React from "react";
+import tw from "tailwind-styled-components";
 
 interface ProjectProps {
   imgScr: string;
   title: string;
   date: string;
-  skill: string;
+  features: string;
   describe: string;
   repository: string;
-  showDetail: string;
+  frontend: string;
   posting: string;
+  backend: string;
+  deployment: string;
 }
 
 const Project: React.FC<ProjectProps> = ({
   imgScr,
   title,
   date,
-  skill,
   describe,
+  features,
   repository,
-  showDetail,
   posting,
+  frontend,
+  backend,
+  deployment,
 }) => {
   return (
     <>
-      <img src={imgScr} />
-      <h2>{title}</h2>
-      <p>{date}</p>
-      <p>사용 기술: {skill}</p>
-      <textarea>{describe}</textarea>
-      <button>
-        <a href={repository} target="_blank">
-          깃허브 링크
-        </a>
-      </button>
-      <button>
-        <a href={showDetail} target="_blank">
+      <ImgBox>
+        {JSON.parse(imgScr).map((src) => (
+          <img src={src} />
+        ))}
+      </ImgBox>
+      <ProjectTitle>{title}</ProjectTitle>
+      <Date>{date}</Date>
+      <Describe>{describe}</Describe>
+      <ReadMe>
+        <a href="#" target="_blank">
           상세보기
         </a>
-      </button>
-      <button>
-        <a href={posting} target="_blank">
-          회고
-        </a>
-      </button>
+      </ReadMe>
+      <DetailBox>
+        <DetailList>
+          <DetailTitle>주요 기능</DetailTitle>
+          <DetailContent>{features}</DetailContent>
+        </DetailList>
+        <DetailList>
+          <DetailTitle>Github</DetailTitle>
+          <DetailContent>{repository}</DetailContent>
+        </DetailList>
+        <DetailList>
+          <DetailTitle>회고</DetailTitle>
+          <DetailContent>{posting}</DetailContent>
+        </DetailList>
+        <DetailList>
+          <DetailTitle>Frontend</DetailTitle>
+          <DetailContent>{frontend}</DetailContent>
+        </DetailList>
+        <DetailList>
+          <DetailTitle>Backend</DetailTitle>
+          <DetailContent>{backend}</DetailContent>
+        </DetailList>
+        <DetailList>
+          <DetailTitle>Deployment</DetailTitle>
+          <DetailContent>{deployment}</DetailContent>
+        </DetailList>
+      </DetailBox>
     </>
   );
 };
+
+const ImgBox = tw.div``;
+const ProjectTitle = tw.h2``;
+const Date = tw.p``;
+const Describe = tw.div``;
+const ReadMe = tw.button``;
+const DetailBox = tw.div``;
+const DetailList = tw.div``;
+const DetailTitle = tw.div``;
+const DetailContent = tw.div``;
 
 export default Project;
