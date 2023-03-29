@@ -4,7 +4,7 @@ import tw from "tailwind-styled-components";
 import Title from "./Title";
 
 const Container = tw.div`
-  bg-[#f5f8fd] px-[10%] py-10
+  bg-[#f5f7f2] px-[10%] py-10
 `;
 
 const SecondTitle = tw.h2`
@@ -14,7 +14,7 @@ const SecondTitle = tw.h2`
 const Projects: React.FC = () => {
   return (
     <Container>
-      <Title title="Project" length="8" />
+      <Title title="Project" length="w-[8rem]" />
       <SecondTitle>개인 프로젝트</SecondTitle>
       <Project
         imgsrc={JSON.stringify(["/나도땀1.png", "/나도땀2.png"])}
@@ -68,7 +68,7 @@ const Projects: React.FC = () => {
         posting="https://jiwoo84.tistory.com/155"
       />
       <Project
-        imgScr={JSON.stringify([
+        imgsrc={JSON.stringify([
           "/허깅1.png",
           "/허깅2.png",
           "/허깅3.png",
@@ -97,7 +97,7 @@ const Projects: React.FC = () => {
       <hr />
       <SecondTitle>진행중인 프로젝트</SecondTitle>
       <Project
-        imgScr={JSON.stringify(["/허깅1.png", "/허깅2.png"])}
+        imgsrc={JSON.stringify(["/허깅1.png", "/허깅2.png"])}
         title="친구와 만날 장소를 정할 수 있는 장소 투표 서비스"
         date="2022.3.05 ~ 진행중"
         features="회원가입 및 로그인, 장바구니, 일반 회원 주문/ 정보 관리, 관리자 주문/ 상품/ 카테고리 관리"

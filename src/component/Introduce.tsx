@@ -6,91 +6,98 @@ import { faEnvelope, faCheck } from "@fortawesome/free-solid-svg-icons";
 import tw from "tailwind-styled-components";
 
 const Container = tw.div`
-  flex flex-col justify-center items-center px-[10%] h-[100vh]
+  flex flex-col md:flex-row justify-center items-center px-[10%] h-[100vh] box-border
 `;
 const Img = tw.img`
-  mb-5 rounded-[100%]
+  rounded-[50%] w-[50%] md:w-[40%] lg:w-[30%] mb-5 md:ml-20 md:mb-16
+`;
+const IntroduceContainer = tw.div`
+  flex flex-col w-[100%] md:p-10 md:ml-20
 `;
 const Greeting = tw.h1``;
 const Name = tw.p`
-  text-5xl mt-5 font-bold
+  text-4xl md:text-5xl mt-2 mb-5 md:mt-5 md:mb-8 font-bold text-green-500 w-[100%]
 `;
 const Describe = tw.ol`
-  my-10
+  md:text-lg mb-5
 `;
 const DescribeList = tw.li`
-  mb-2
+  mb-2 md:mb-3
 `;
 const Contact = tw.div`
-  mb-14
+  flex mb-7 p-1 justify-between max-w-sm
   `;
 const ResumeBtn = tw.a`
-  mr-10 py-2 px-4 rounded-full shadow-md text-white bg-blue-500
+  px-8 md:px-10 py-2 md:mr-5 rounded-full shadow-md text-white bg-green-500
 `;
 const ContactBtns = tw.div`
-  w-[50%] place-content-evenly 
+  flex mr-5 
 `;
 const ContactBtn = tw.button`
-bg-white hover:bg-gray-100 text-gray-800 py-1 px-2 border border-gray-400 rounded shadow mx-1
+bg-white mr-2 md:mr-4 hover:bg-gray-100 text-gray-800 py-1 px-[5%] border border-gray-400 rounded shadow
 `;
 const ImgTistory = tw.img`
   absolute top-2.5 right-3 w-6
 `;
 const TistoryBtn = tw.button`
-  mx-1 relative bg-white hover:bg-gray-100 text-gray-800 py-2 px-6 border border-gray-400 rounded shadow
+  relative bg-white hover:bg-gray-100 text-gray-800 py-2 px-6 border border-gray-400 rounded shadow
 `;
 
 const Introduce: React.FC = () => {
   return (
     <Container>
-      <Img src="/농담곰.png" className="w-52" />
-      <Greeting>
-        <p>HI THERE!</p>
-        <p>
-          I'm a <b>Front-End</b> Web Developer.
-        </p>
-      </Greeting>
-      <Name>곽지우</Name>
-      <Describe>
-        <DescribeList>
-          <FontAwesomeIcon icon={faCheck} size="xs" />
-          &nbsp;10인 미만 기업에서 팀 리더를 맡은 경험이 있습니다.
-        </DescribeList>
-        <DescribeList>
-          <FontAwesomeIcon icon={faCheck} size="xs" />
-          &nbsp;마케팅, 연극, 영화계 등 다양한 곳에서 다양한 사람들과
-          일했습니다.
-        </DescribeList>
-        <DescribeList>
-          <FontAwesomeIcon icon={faCheck} size="xs" />
-          &nbsp;쇼핑몰을 관리 업무로 웹 개발을 접해서 시작하게 됐습니다.
-        </DescribeList>
-        <DescribeList>
-          <FontAwesomeIcon icon={faCheck} size="xs" />
-          &nbsp;UX를 중시하며 유저 이탈이 적은 서비스를 만드는 것이 목표입니다.
-        </DescribeList>
-      </Describe>
-      <Contact className="contact" style={{ display: "flex" }}>
-        <ResumeBtn href="/곽지우.pdf" target="_blank">
-          Resume
-        </ResumeBtn>
-        <ContactBtns style={{ display: "flex" }}>
-          <ContactBtn>
-            <a href="https://matilto:wldn0804@gmail.com" target="_blank">
-              <FontAwesomeIcon icon={faEnvelope} size="2x" />
-            </a>
-          </ContactBtn>
-          <ContactBtn>
-            <a href="https://github.com/jiwoo84" target="_blank">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
-          </ContactBtn>
-          <TistoryBtn>
-            <ImgTistory src="tistory.svg" />
-            <a href="https://jiwoo84.tistory.com/" target="_blank"></a>
-          </TistoryBtn>
-        </ContactBtns>
-      </Contact>
+      <Img src="/농담곰.png" />
+      <IntroduceContainer>
+        <Greeting>
+          <p>HI THERE!</p>
+          <p>
+            I'm a <b>Front-End</b> Web Developer.
+          </p>
+        </Greeting>
+        <Name>김두철</Name>
+        <Describe>
+          <DescribeList>
+            <FontAwesomeIcon icon={faCheck} size="xs" />
+            &nbsp;<b>10인 미만 기업</b>에서 <b>팀 리더</b>를 맡은 경험이
+            있습니다.
+          </DescribeList>
+          <DescribeList>
+            <FontAwesomeIcon icon={faCheck} size="xs" />
+            &nbsp;마케팅, 연극, 영화계 등 <b>다양한 분야</b>에서{" "}
+            <b>다양한 사람들</b>과 일했습니다.
+          </DescribeList>
+          <DescribeList>
+            <FontAwesomeIcon icon={faCheck} size="xs" />
+            &nbsp;쇼핑몰을 관리 업무로 웹 개발을 접해서 시작하게 됐습니다.
+          </DescribeList>
+          <DescribeList>
+            <FontAwesomeIcon icon={faCheck} size="xs" />
+            &nbsp;<b>UX를 중시</b>하며 <b>유저 이탈이 적은 서비스</b>를 만드는
+            것이 목표입니다.
+          </DescribeList>
+        </Describe>
+        <Contact>
+          <ResumeBtn href="/곽지우.pdf" target="_blank">
+            Resume
+          </ResumeBtn>
+          <ContactBtns>
+            <ContactBtn>
+              <a href="https://matilto:wldn0804@gmail.com" target="_blank">
+                <FontAwesomeIcon icon={faEnvelope} size="2x" />
+              </a>
+            </ContactBtn>
+            <ContactBtn>
+              <a href="https://github.com/jiwoo84" target="_blank">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+            </ContactBtn>
+            <TistoryBtn>
+              <ImgTistory src="tistory.svg" />
+              <a href="https://jiwoo84.tistory.com/" target="_blank"></a>
+            </TistoryBtn>
+          </ContactBtns>
+        </Contact>
+      </IntroduceContainer>
     </Container>
   );
 };

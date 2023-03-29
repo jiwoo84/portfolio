@@ -8,7 +8,7 @@ const Container = tw.div`
     flex
     flex-col
     mx-auto
-    my-5
+    my-20
 `;
 
 const Content: React.FC = () => {

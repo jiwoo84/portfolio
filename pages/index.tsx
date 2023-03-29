@@ -1,5 +1,5 @@
 import tw from "tailwind-styled-components";
-import SideBar from "../src/component/Sidebar";
+import Navbar from "../src/component/Navbar";
 import Content from "./../src/component/Content";
 
 const Display = tw.div`
@@ -9,7 +9,7 @@ const Display = tw.div`
 const Home: React.FC = () => {
   return (
     <Display>
-      <SideBar />
+      <Navbar />
       <Content />
     </Display>
   );

@@ -14,7 +14,7 @@ const Container = tw.h1`
   text-4xl mt-5 mb-3 font-bold
 `;
 const Separator = tw.div<SeparatorProps>`
-  bg-blue-500 h-2 mb-10 ${(props) => `w-[${props.length}rem]`}
+  bg-green-500 h-2 mb-10 ${(props) => props.length}}
 `;
 
 const Title: React.FC<titleProps> = ({ title, length }) => {
