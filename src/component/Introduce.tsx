@@ -6,7 +6,7 @@ import { faEnvelope, faCheck } from "@fortawesome/free-solid-svg-icons";
 import tw from "tailwind-styled-components";
 
 const Container = tw.div`
-  flex flex-col md:flex-row justify-center items-center px-[10%] h-[100vh] box-border
+  flex flex-col md:flex-row justify-center items-center px-[10%] h-[90vh] box-border
 `;
 const Img = tw.img`
   rounded-[50%] w-[50%] md:w-[40%] lg:w-[30%] mb-5 md:ml-20 md:mb-16

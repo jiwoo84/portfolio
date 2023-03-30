@@ -5,3 +5,13 @@
 :root {
   --backgroundColor: #f5f8fd;
 }
+
+/* 이미지 슬라이더 화살표 없애기 */
+.slick-prev::before,
+.slick-next::before {
+  opacity: 0;
+  display: none;
+}
+.slick-slide div {
+  cursor: pointer;
+}

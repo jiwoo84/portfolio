@@ -17,16 +17,20 @@ const Projects: React.FC = () => {
       <Title title="Project" length="w-[8rem]" />
       <SecondTitle>개인 프로젝트</SecondTitle>
       <Project
-        imgsrc={JSON.stringify(["/나도땀1.png", "/나도땀2.png"])}
+        imgsrc={JSON.stringify([
+          "/나도땀2.png",
+          "/나도땀3.png",
+          "/나도땀1.png",
+        ])}
         title="포트폴리오 웹페이지"
         date="2023.03.24 ~ (1주)"
-        describe={`초기 로딩 속도가 중요하기에 Next.js를 사용해 SSR 페이지를 구현했습니다.
+        features="구직자 정보, 프로젝트 내역, 학력, 스킬"
+        describe="초기 로딩 속도가 중요하기에 Next.js를 사용해 SSR 페이지를 구현했습니다.
         Typescript를 사용하며 타입 삽입에 익숙해졌고, 에러를 컴파일 단계에서 확인하여 처리할 수 있었습니다.
          가독성 좋고 스타일에 자유도가 높은 tailwind를 사용했고, Styled-components와 결합해 리액트 컴포넌트의 장점을 극대화했습니다.
          UI & UX를 깊게 고민하여, 페이지 이동이 적고 왼쪽에 긴 사이드바가 있는 형태를 디자인했습니다.
          Next.js에 조금 더 익숙해진 계기가 되었고, 많은 기업들의 유입을 위해 검색엔진최적화(SEO)에 신경 쓴 프로젝트입니다.
-        `}
-        features="구직자 정보, 프로젝트 내역, 학력, 스킬"
+        "
         repository="https://github.com/jiwoo84/portfolio"
         frontend="Next.js, React, Typescript, Redux, Styled-components, SCSS"
         backend="Node.js express MySQL Sequelize"
@@ -96,7 +100,7 @@ const Projects: React.FC = () => {
       />
       <hr />
       <SecondTitle>진행중인 프로젝트</SecondTitle>
-      <Project
+      {/* <Project
         imgsrc={JSON.stringify(["/허깅1.png", "/허깅2.png"])}
         title="친구와 만날 장소를 정할 수 있는 장소 투표 서비스"
         date="2022.3.05 ~ 진행중"
@@ -115,7 +119,7 @@ const Projects: React.FC = () => {
         backend="Node.js express MySQL Sequelize"
         deployment="AWS"
         posting="https://jiwoo84.tistory.com/155"
-      />
+      /> */}
     </Container>
   );
 };
