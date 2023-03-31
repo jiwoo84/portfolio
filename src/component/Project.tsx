@@ -1,71 +1,86 @@
-import React, { useEffect } from "react";
+import React, { HtmlHTMLAttributes, ReactNode, useEffect } from "react";
 import tw from "tailwind-styled-components";
 import Carousel from "./Carousel";
 
 interface ProjectProps {
-  imgsrc: string;
+  img: string;
   title: string;
   date: string;
   features: string;
-  describe: string;
   repository: string;
   frontend: string;
   posting: string;
   backend: string;
   deployment: string;
+  children: ReactNode;
 }
 
 const Container = tw.div`
-    flex flex-col md:flex-row
+    flex flex-col lg:flex-row bg-white py-5 px-3 sm:px-5 md:px-10 lg:px-10 mb-5 rounded-2xl
 `;
 const DetailContainer = tw.div`
-  py-5
+  py-6 px-5 lg:ml-20
 `;
 const Title = tw.h2`
-  text-xl font-bold text-green-500
+  text-[1.5rem] font-extrabold text-green-500 font-sans
 `;
 const Date = tw.p`
   text-sm text-gray-400
 `;
 const Describe = tw.div`
-  py-5
+  py-5 
 `;
-const ReadMe = tw.button``;
-const DetailBox = tw.div``;
-const DetailList = tw.div``;
-const DetailTitle = tw.div``;
-const DetailContent = tw.div``;
+const ReadMeWrapper = tw.div`
+  flex justify-end
+`;
+const ReadMeBtn = tw.button`
+  bg-green-500 hover:bg-gray-300 text-white font-bold py-2 px-10 rounded-full mr-5
+`;
+const DetailBox = tw.div`
+  
+`;
+const DetailList = tw.div`
+  flex flex-col sm:flex-row md:flex-row lg:flex-row mb-2
+`;
+const DetailTitle = tw.div`
+  w-[9rem] text-green-500 font-bold
+`;
+const DetailContent = tw.div`
+  w-[100%]
+`;
+const Hr = tw.hr`
+  my-5
+`;
 
-const Project: React.FC<ProjectProps> = ({
-  imgsrc,
+const Project = ({
+  img,
   title,
   date,
-  describe,
   features,
   repository,
   posting,
   frontend,
   backend,
   deployment,
-}) => {
-  // useEffect(() => {
-  //   const describeElement: HTMLElement | null =
-  //     document.getElementById("describeElement")!;
-  //   describeElement.innerHTML = describe;
-  // });
-
+  children,
+}: ProjectProps) => {
   return (
     <Container>
-      <Carousel />
+      <Carousel>
+        {img && JSON.parse(img).map((src: string) => <img src={src} />)}
+      </Carousel>
       <DetailContainer>
         <Title>{title}</Title>
         <Date>{date}</Date>
-        <Describe>{describe}</Describe>
-        <ReadMe>
-          <a href="#" target="_blank">
-            상세보기
-          </a>
-        </ReadMe>
+        <Describe>{children}</Describe>
+        <ReadMeWrapper>
+          <ReadMeBtn>
+            <a href="#" target="_blank">
+              상세보기
+            </a>
+          </ReadMeBtn>
+        </ReadMeWrapper>
+        <Hr />
         <DetailBox>
           <DetailList>
             <DetailTitle>주요 기능</DetailTitle>
@@ -73,11 +88,15 @@ const Project: React.FC<ProjectProps> = ({
           </DetailList>
           <DetailList>
             <DetailTitle>Github</DetailTitle>
-            <DetailContent>{repository}</DetailContent>
+            <DetailContent>
+              <a href={repository}>{repository}</a>
+            </DetailContent>
           </DetailList>
           <DetailList>
             <DetailTitle>회고</DetailTitle>
-            <DetailContent>{posting}</DetailContent>
+            <DetailContent>
+              <a href={posting}>{posting}</a>
+            </DetailContent>
           </DetailList>
           <DetailList>
             <DetailTitle>Frontend</DetailTitle>

@@ -6,6 +6,10 @@
   --backgroundColor: #f5f8fd;
 }
 
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 /* 이미지 슬라이더 화살표 없애기 */
 .slick-prev::before,
 .slick-next::before {
@@ -14,4 +18,10 @@
 }
 .slick-slide div {
   cursor: pointer;
+}
+
+/* 슬라이더 이미지 가운데 정렬 */
+.slick-track {
+  display: flex !important;
+  align-items: center;
 }

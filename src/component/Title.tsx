@@ -10,19 +10,21 @@ interface titleProps {
   length: string;
 }
 
-const Container = tw.h1`
+const TitleWrapper = tw.div`
+`;
+const TitleText = tw.h1`
   text-4xl mt-5 mb-3 font-bold
 `;
 const Separator = tw.div<SeparatorProps>`
-  bg-green-500 h-2 mb-10 ${(props) => props.length}}
+  bg-green-500 h-2 ${(props) => props.length}}
 `;
 
 const Title: React.FC<titleProps> = ({ title, length }) => {
   return (
-    <>
-      <Container>{title}</Container>
+    <TitleWrapper>
+      <TitleText>{title}</TitleText>
       <Separator length={length} />
-    </>
+    </TitleWrapper>
   );
 };
 

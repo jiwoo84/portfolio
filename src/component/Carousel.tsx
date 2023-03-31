@@ -1,44 +1,41 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import tw from "tailwind-styled-components";
 
 const SliderWrapper = tw.div`
-  p-10 w-[30rem]
+  w-[100%]
 `;
 const StyledSlider = tw(Slider)`
-  w-[100%] relative 
+  mx-[auto] w-[16rem] sm:w-[30rem] mt-5
 `;
 const NextArrow = tw.img`
-  w-5
+  h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem] right-[-2rem] 
 `;
-const PreArrow = tw.div`
-  w-[30px] h-[30px] absolute r-[16px] z-99 
+const PreArrow = tw.img`
+  h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem] left-[-2rem]
 `;
 
-const Carousel: React.FC = () => {
-  // 옵션
+interface CarouselProps {
+  children: ReactNode;
+}
+
+const Carousel = ({ children }: CarouselProps) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    centerPadding: "50px",
     nextArrow: <NextArrow src="/chevron-right.png" />,
-    prevArrow: (
-      <PreArrow>
-        <img src="/chevron-left.png" />
-      </PreArrow>
-    ),
+    prevArrow: <PreArrow src="/chevron-left.png" />,
   };
 
   return (
     <SliderWrapper>
-      <Slider {...settings} className="relative shadow-lg">
-        <img src="/나도땀1.png" />
-        <img src="/나도땀2.png" />
-      </Slider>
+      <StyledSlider {...settings}>{children}</StyledSlider>
     </SliderWrapper>
   );
 };
