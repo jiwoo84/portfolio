@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import tw from "tailwind-styled-components";
 
 const SliderWrapper = tw.div`
-  w-[100%]
+  w-[100%] mb-5
 `;
 const StyledSlider = tw(Slider)`
   mx-[auto] w-[16rem] sm:w-[30rem] mt-5

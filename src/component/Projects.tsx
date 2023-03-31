@@ -2,6 +2,7 @@ import React from "react";
 import Project from "./Project";
 import tw from "tailwind-styled-components";
 import Title from "./Title";
+import SecondTitle from "./SecondTitle";
 
 const Container = tw.div`
   bg-[#f5f7f2] px-[5%] md:px-[10%] py-10
@@ -9,9 +10,7 @@ const Container = tw.div`
 const SecondTitleWrapper = tw.div`
   flex justify-center
 `;
-const SecondTitle = tw.h2`
- my-7 mx-auto py-2 px-10 sm:px-20 md:px-28 lg:px-28 text-2xl text-white font-bold bg-green-500 rounded-full  text-center shadow-lg 
-`;
+
 const Emphasis = tw.span`
   text-red-500 font-bold  
 `;
@@ -19,7 +18,7 @@ const Spaces = tw.p`
   mb-3
 `;
 
-const Projects: React.FC = () => {
+const Projects = () => {
   return (
     <Container>
       <Title title="Project" length="w-[8rem]" />
@@ -142,7 +141,7 @@ const Projects: React.FC = () => {
 
       <Project
         img={JSON.stringify(["/허깅1.png", "/허깅2.png"])}
-        title="친구와 만날 장소를 정할 수 있는 장소 투표 서비스"
+        title="ManMo: 만나서 모하지?"
         date="2022.3.05 ~ 진행중"
         features="회원가입 및 로그인, 장바구니, 일반 회원 주문/ 정보 관리, 관리자 주문/ 상품/ 카테고리 관리"
         repository="https://github.com/jiwoo84/Nado-ddam"
