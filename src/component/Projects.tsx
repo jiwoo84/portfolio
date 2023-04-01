@@ -7,9 +7,6 @@ import SecondTitle from "./SecondTitle";
 const Container = tw.div`
   bg-[#f5f7f2] px-[5%] md:px-[10%] py-10
 `;
-const SecondTitleWrapper = tw.div`
-  flex justify-center
-`;
 
 const Emphasis = tw.span`
   text-red-500 font-bold  
@@ -22,9 +19,7 @@ const Projects = () => {
   return (
     <Container>
       <Title title="Project" length="w-[8rem]" />
-      <SecondTitleWrapper>
-        <SecondTitle>개인 프로젝트</SecondTitle>
-      </SecondTitleWrapper>
+      <SecondTitle>개인 프로젝트</SecondTitle>
       <Project
         img={JSON.stringify([
           "/나도땀1.png",
@@ -59,9 +54,7 @@ const Projects = () => {
           <Emphasis>검색엔진최적화(SEO)</Emphasis>에 신경 쓴 프로젝트입니다.
         </div>
       </Project>
-      <SecondTitleWrapper>
-        <SecondTitle>팀 프로젝트</SecondTitle>
-      </SecondTitleWrapper>
+      <SecondTitle>팀 프로젝트</SecondTitle>
       <Project
         img={JSON.stringify([
           "/나도땀1.png",
@@ -135,9 +128,7 @@ const Projects = () => {
           있었습니다.
         </div>
       </Project>
-      <SecondTitleWrapper>
-        <SecondTitle>진행중인 프로젝트</SecondTitle>
-      </SecondTitleWrapper>
+      <SecondTitle>진행중인 프로젝트</SecondTitle>
 
       <Project
         img={JSON.stringify(["/허깅1.png", "/허깅2.png"])}

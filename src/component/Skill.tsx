@@ -1,95 +1,103 @@
 import React, { FC } from "react";
 import Title from "./Title";
 import tw from "tailwind-styled-components";
+import SecondTitle from "./SecondTitle";
 
 const Container = tw.div`
-p-[10%]
+  px-[5%] md:px-[10%] py-10
 `;
 const SkillContainer = tw.div`
 `;
 const SkillWrapper = tw.div`
- grid grid-cols-[repeat(auto-fill,minmax(20rem,1fr))] gap-7 
+ grid grid-cols-[repeat(auto-fill,minmax(20rem,1fr))] gap-3 sm:gap-7 md:gap-7 lg:gap-7
 `;
 const SkillTitle = tw.h3`
 text-2xl font-bold  mb-5 text-center
 `;
 const SkillBox = tw.div`
-w-[100%] h-[100%] my-5 sm:mr-5 md:mr-5 lg:mr-5 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700
+w-[100%] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100
 `;
 const SkillName = tw.h3`
  text-xl font-bold mb-2
 `;
 const SkillList = tw.ol``;
+const Li = tw.li`
+  mb-1
+`;
 
 const Skill: React.FC = () => {
   return (
     <Container>
       <Title title="Skill" length="w-[6rem]" />
       <SkillContainer>
-        <SkillTitle>Frontend</SkillTitle>
+        <SecondTitle>Frontend</SecondTitle>
         <SkillWrapper>
           <SkillBox>
             <SkillName className="text-[#00c5f6]">React</SkillName>
             <SkillList>
-              <li>- CSR 방식으로 SPA를 구축한 경험이 있습니다.</li>
-              <li>- Next.js를 사용해 SSR를 구현한 경험이 있습니다.</li>
-              <li>
-                - 컴포넌트 단위의 설계에 익숙하며, 렌더링 성능을 개선시킨 경험이
-                있습니다.
-              </li>
+              <Li>- CSR 방식으로 SPA를 구축한 경험 보유</Li>
+              <Li>- 컴포넌트 단위의 설계에 익숙함</Li>
+              <Li>- 렌더링 성능 개선 경험 보유</Li>
             </SkillList>
           </SkillBox>
 
           <SkillBox>
             <SkillName className="text-[#2f74c0]">Typescript</SkillName>
             <SkillList>
-              <li>- 타입 추론을 활용하여 개발자 경험을 개선합니다.</li>
+              <Li>- 개인 프로젝트 진행 경험 보유</Li>
+              <Li>- 타입 추론 활용하여 개발자 경험 개선 가능</Li>
             </SkillList>
           </SkillBox>
 
           <SkillBox>
             <SkillName className="text-[#f2be4e]">Javascript</SkillName>
             <SkillList>
-              <li>
-                - 기본 문법과 특징을 이해하고, ES6문법을 사용할 수 있습니다.
-              </li>
-              <li>- 다양한 자료구조와 알고리즘을 구현할 수 있습니다.</li>
+              <Li>- 기본 문법과 특징을 이해하고, ES6문법에 익숙함</Li>
+              <Li>- 다양한 자료구조와 알고리즘 구현 가능</Li>
             </SkillList>
           </SkillBox>
 
           <SkillBox>
             <SkillName>Next.js</SkillName>
             <SkillList>
-              <li>
-                - state를 전역적으로 관리하고 Props Drilling을 막기 위해 주로
-                사용합니다.
-              </li>
+              <Li>
+                - 초기 SSR 렌더링을 통해 SEO에 최적화된 정적 웹 사이트 구현 경험
+                보유
+              </Li>
             </SkillList>
           </SkillBox>
 
           <SkillBox>
             <SkillName className="text-[#7f42c3]">Redux</SkillName>
             <SkillList>
-              <li>
-                - state를 전역적으로 관리하고 Props Drilling을 막기 위해 주로
-                사용합니다.
-              </li>
-              <li>- redux-toolkit를 사용한 전역 상태 관리 경험이 있습니다.</li>
+              <Li>- redux-toolkit 사용한 전역 상태 관리 경험 보유</Li>
+              <Li>- 전역 모달, 페이지네이션 컴포넌트 제작 경험 보유</Li>
+            </SkillList>
+          </SkillBox>
+          <SkillBox>
+            <SkillName className="text-[#254bdc]">CSS 프레임워크</SkillName>
+            <SkillList>
+              <Li>- Tailwind </Li>
+              <Li>- Styled-components</Li>
+              <Li> - SASS / SCSS</Li>
+              <Li>- Bootstrap / Bulma</Li>
             </SkillList>
           </SkillBox>
         </SkillWrapper>
-        <SkillTitle>Version Control</SkillTitle>
+        <SecondTitle>ETC.</SecondTitle>
         <SkillWrapper>
           <SkillBox>
-            <SkillName>Git</SkillName>
+            <SkillName className="text-[#e84d31]">Git</SkillName>
             <SkillList>
-              <li>- git flow 방식으로 두 개의 프로젝트를 진행했습니다.</li>
-              <li>- git bash를 통해 기본적인 동작을 수행할 수 있습니다.</li>
-              <li>- Github, Gitlab을 사용한 프로젝트 관리 경험이 있습니다.</li>
-              <li>
-                - Udacity의 깃 커밋 스타일 가이드에 따라 커밋 컨벤션을
-                작성합니다.
-              </li>
+              <Li>- git flow 방식의 프로젝트 진행 경험 보유</Li>
+              <Li>- git bash 통한 git 기능 수행 가능</Li>
+              <Li>- Github, Gitlab을 사용한 프로젝트 관리 경험 보유</Li>
+            </SkillList>
+          </SkillBox>
+          <SkillBox>
+            <SkillName className="text-[#0ac87e]">Figma</SkillName>
+            <SkillList>
+              <Li>- 와이어프레임 제작 경험 보유</Li>
             </SkillList>
           </SkillBox>
         </SkillWrapper>
