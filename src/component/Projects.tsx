@@ -18,7 +18,7 @@ const Spaces = tw.p`
 const Projects = () => {
   return (
     <Container>
-      <Title title="Project" length="w-[8rem]" />
+      <Title length="w-[8rem]">Project</Title>
       <SecondTitle>개인 프로젝트</SecondTitle>
       <Project
         img={JSON.stringify([

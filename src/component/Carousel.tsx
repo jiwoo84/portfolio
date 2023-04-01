@@ -1,21 +1,37 @@
 import React, { ReactNode } from "react";
-import Slider from "react-slick";
+import Slider, { CustomArrowProps } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import tw from "tailwind-styled-components";
 
 const SliderWrapper = tw.div`
-  w-[100%] mb-5
+  w-[100%] mb-5 lg:mt-10 lg:ml-7
 `;
 const StyledSlider = tw(Slider)`
-  mx-[auto] w-[16rem] sm:w-[30rem] mt-5
+  mx-[auto] w-[16rem] sm:w-[30rem] md:w-[30rem] lg:w-[30rem] mb-5 
 `;
-const NextArrow = tw.img`
-  h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem] right-[-2rem] 
+const NextArrowImg = tw.img`
+  h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem] 
 `;
-const PreArrow = tw.img`
-  h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem] left-[-2rem]
+const PreArrowImg = tw.img`
+  h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem]
 `;
+
+const NextArrow = ({
+  currentSlide,
+  slideCount,
+  ...props
+}: CustomArrowProps) => (
+  <div {...props}>
+    <img src="/chevron-right.png" />
+  </div>
+);
+
+const PreArrow = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
+  <div {...props}>
+    <img src="/chevron-left.png" />
+  </div>
+);
 
 interface CarouselProps {
   children: ReactNode;
@@ -29,8 +45,8 @@ const Carousel = ({ children }: CarouselProps) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     centerPadding: "50px",
-    nextArrow: <NextArrow src="/chevron-right.png" />,
-    prevArrow: <PreArrow src="/chevron-left.png" />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PreArrow />,
   };
 
   return (

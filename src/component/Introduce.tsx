@@ -9,17 +9,17 @@ const Container = tw.div`
   flex flex-col md:flex-row justify-center items-center px-[10%] h-[90vh] box-border
 `;
 const Img = tw.img`
-  rounded-[50%] w-[50%] md:w-[40%] lg:w-[30%] mb-5 md:ml-20 md:mb-16
+  rounded-[50%] w-[50%] md:w-[40%] lg:w-[30%] mb-5 md:ml-20 lg:ml-20 md:mb-16 lg:mb-16
 `;
 const IntroduceContainer = tw.div`
-  flex flex-col w-[100%] md:p-10 md:ml-20
+  flex flex-col w-[100%] md:p-10 lg:p-10 md:ml-16 lg:ml-16
 `;
 const Greeting = tw.h1``;
 const Name = tw.p`
-  text-4xl md:text-5xl mt-2 mb-5 md:mt-5 md:mb-8 font-bold text-green-500 w-[100%]
+  text-4xl md:text-5xl lg:text-5xl mt-2 mb-5 md:mt-5 lg:mt-5 md:mb-8 lg:mb-8 font-bold text-green-500 w-[100%]
 `;
 const Describe = tw.ol`
-  md:text-lg mb-5
+  md:text-lg lg:text-lg mb-5
 `;
 const DescribeList = tw.li`
   mb-2 md:mb-3
@@ -46,7 +46,7 @@ const TistoryBtn = tw.button`
 const Introduce: React.FC = () => {
   return (
     <Container>
-      <Img src="/농담곰.png" />
+      <Img src="/얼굴사진.jpg" />
       <IntroduceContainer>
         <Greeting>
           <p>HI THERE!</p>
@@ -54,7 +54,7 @@ const Introduce: React.FC = () => {
             I'm a <b>Front-End</b> Web Developer.
           </p>
         </Greeting>
-        <Name>김두철</Name>
+        <Name>곽지우</Name>
         <Describe>
           <DescribeList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
@@ -82,7 +82,7 @@ const Introduce: React.FC = () => {
           </ResumeBtn>
           <ContactBtns>
             <ContactBtn>
-              <a href="https://matilto:wldn0804@gmail.com" target="_blank">
+              <a href="mailto:wldn0804@gmail.com" target="_blank">
                 <FontAwesomeIcon icon={faEnvelope} size="2x" />
               </a>
             </ContactBtn>
@@ -92,8 +92,9 @@ const Introduce: React.FC = () => {
               </a>
             </ContactBtn>
             <TistoryBtn>
-              <ImgTistory src="tistory.svg" />
-              <a href="https://jiwoo84.tistory.com/" target="_blank"></a>
+              <a href="https://jiwoo84.tistory.com/" target="_blank">
+                <ImgTistory src="tistory.svg" />
+              </a>
             </TistoryBtn>
           </ContactBtns>
         </Contact>

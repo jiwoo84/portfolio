@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Collapse } from "flowbite";
 
 const Navbar: React.FC = () => {
@@ -14,6 +14,11 @@ const Navbar: React.FC = () => {
       const collapse = new Collapse(targetEl, triggerEl);
     }
   }, []);
+
+  const projectRef = useRef<HTMLDivElement>(null);
+  const clickProject = () => {
+    projectRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <nav className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-40 top-0 left-0 border-b border-gray-200 dark:border-gray-600">

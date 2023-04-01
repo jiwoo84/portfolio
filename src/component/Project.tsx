@@ -16,16 +16,16 @@ interface ProjectProps {
 }
 
 const Container = tw.div`
-    flex flex-col lg:flex-row bg-white py-5 px-3 sm:px-5 md:px-10 lg:px-10 mb-5 rounded-2xl
-`;
-const DetailContainer = tw.div`
-  py-6 px-5 lg:ml-20
+    flex flex-col lg:flex-row bg-white hover:translate-y-[5px]  hover:shadow-xl py-10 px-3 sm:px-5 md:px-10 lg:px-10 mb-5 rounded-2xl
 `;
 const Title = tw.h2`
   text-[1.5rem] font-extrabold text-green-500 font-sans
 `;
 const Date = tw.p`
   text-sm text-gray-400
+`;
+const DetailContainer = tw.div`
+  px-5 lg:ml-20 w-[100%]
 `;
 const Describe = tw.div`
   py-5 
@@ -67,7 +67,8 @@ const Project = ({
   return (
     <Container>
       <Carousel>
-        {img && JSON.parse(img).map((src: string) => <img src={src} />)}
+        {img &&
+          JSON.parse(img).map((src: string) => <img src={src} key={src} />)}
       </Carousel>
       <DetailContainer>
         <Title>{title}</Title>

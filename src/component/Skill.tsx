@@ -1,18 +1,15 @@
-import React, { FC } from "react";
+import React from "react";
 import Title from "./Title";
 import tw from "tailwind-styled-components";
 import SecondTitle from "./SecondTitle";
 
 const Container = tw.div`
-  px-[5%] md:px-[10%] py-10
+  px-[5%] md:px-[10%] pt-10 pb-16
 `;
 const SkillContainer = tw.div`
 `;
 const SkillWrapper = tw.div`
  grid grid-cols-[repeat(auto-fill,minmax(20rem,1fr))] gap-3 sm:gap-7 md:gap-7 lg:gap-7
-`;
-const SkillTitle = tw.h3`
-text-2xl font-bold  mb-5 text-center
 `;
 const SkillBox = tw.div`
 w-[100%] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100
@@ -28,7 +25,7 @@ const Li = tw.li`
 const Skill: React.FC = () => {
   return (
     <Container>
-      <Title title="Skill" length="w-[6rem]" />
+      <Title length="w-[5.5rem]">Skill</Title>
       <SkillContainer>
         <SecondTitle>Frontend</SecondTitle>
         <SkillWrapper>
@@ -56,7 +53,13 @@ const Skill: React.FC = () => {
               <Li>- 다양한 자료구조와 알고리즘 구현 가능</Li>
             </SkillList>
           </SkillBox>
-
+          <SkillBox>
+            <SkillName className="text-[#7f42c3]">Redux</SkillName>
+            <SkillList>
+              <Li>- redux-toolkit 사용한 전역 상태 관리 경험 보유</Li>
+              <Li>- 전역 모달, 페이지네이션 컴포넌트 제작 경험 보유</Li>
+            </SkillList>
+          </SkillBox>
           <SkillBox>
             <SkillName>Next.js</SkillName>
             <SkillList>
@@ -64,14 +67,6 @@ const Skill: React.FC = () => {
                 - 초기 SSR 렌더링을 통해 SEO에 최적화된 정적 웹 사이트 구현 경험
                 보유
               </Li>
-            </SkillList>
-          </SkillBox>
-
-          <SkillBox>
-            <SkillName className="text-[#7f42c3]">Redux</SkillName>
-            <SkillList>
-              <Li>- redux-toolkit 사용한 전역 상태 관리 경험 보유</Li>
-              <Li>- 전역 모달, 페이지네이션 컴포넌트 제작 경험 보유</Li>
             </SkillList>
           </SkillBox>
           <SkillBox>
@@ -84,8 +79,14 @@ const Skill: React.FC = () => {
             </SkillList>
           </SkillBox>
         </SkillWrapper>
-        <SecondTitle>ETC.</SecondTitle>
+        <SecondTitle>ETC</SecondTitle>
         <SkillWrapper>
+          <SkillBox>
+            <SkillName className="text-black">Vercel</SkillName>
+            <SkillList>
+              <Li>- 와이어프레임 제작 경험 보유</Li>
+            </SkillList>
+          </SkillBox>
           <SkillBox>
             <SkillName className="text-[#e84d31]">Git</SkillName>
             <SkillList>

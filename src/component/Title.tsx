@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import tw from "tailwind-styled-components";
 
 interface SeparatorProps {
@@ -6,8 +6,8 @@ interface SeparatorProps {
 }
 
 interface titleProps {
-  title: string;
   length: string;
+  children: ReactNode;
 }
 
 const TitleWrapper = tw.div`
@@ -19,10 +19,10 @@ const Separator = tw.div<SeparatorProps>`
   bg-green-500 h-2 ${(props) => props.length}}
 `;
 
-const Title: React.FC<titleProps> = ({ title, length }) => {
+const Title = ({ length, children }: titleProps) => {
   return (
     <TitleWrapper>
-      <TitleText>{title}</TitleText>
+      <TitleText>{children}</TitleText>
       <Separator length={length} />
     </TitleWrapper>
   );
