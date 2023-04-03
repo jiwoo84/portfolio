@@ -1,9 +1,9 @@
 import tw from "tailwind-styled-components";
 import Education from "@/src/component/Education";
 import Skill from "@/src/component/Skill";
-import Introduce from "./Introduce";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import About from "./About";
 
 const Container = tw.div`
     flex
@@ -14,8 +14,8 @@ const Container = tw.div`
 
 const Content: React.FC = () => {
   return (
-    <Container>
-      <Introduce />
+    <Container id="about">
+      <About />
       <Projects />
       <Skill />
       <Education />

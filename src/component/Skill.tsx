@@ -24,7 +24,7 @@ const Li = tw.li`
 
 const Skill: React.FC = () => {
   return (
-    <Container>
+    <Container id="skill">
       <Title length="w-[5.5rem]">Skill</Title>
       <SkillContainer>
         <SecondTitle>Frontend</SecondTitle>

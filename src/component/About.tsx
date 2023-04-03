@@ -6,7 +6,7 @@ import { faEnvelope, faCheck } from "@fortawesome/free-solid-svg-icons";
 import tw from "tailwind-styled-components";
 
 const Container = tw.div`
-  flex flex-col md:flex-row justify-center items-center px-[10%] h-[90vh] box-border
+  flex flex-col md:flex-row justify-center items-center px-[10%] my-10 h-[90vh] box-border
 `;
 const Img = tw.img`
   rounded-[50%] w-[50%] md:w-[40%] lg:w-[30%] mb-5 md:ml-20 lg:ml-20 md:mb-16 lg:mb-16
@@ -43,7 +43,7 @@ const TistoryBtn = tw.button`
   relative bg-white hover:bg-gray-100 text-gray-800 py-2 px-6 border border-gray-400 rounded shadow
 `;
 
-const Introduce: React.FC = () => {
+const About = () => {
   return (
     <Container>
       <Img src="/얼굴사진.jpg" />
@@ -103,4 +103,4 @@ const Introduce: React.FC = () => {
   );
 };
 
-export default Introduce;
+export default About;

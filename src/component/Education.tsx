@@ -28,7 +28,7 @@ const ListDescribe = tw.div`
 
 const Education = () => {
   return (
-    <Container>
+    <Container id="education">
       <Title length="w-[11rem]">Education</Title>
       <ListContainer>
         <ListWrapper>

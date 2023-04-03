@@ -17,7 +17,7 @@ const Spaces = tw.p`
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="project">
       <Title length="w-[8rem]">Project</Title>
       <SecondTitle>개인 프로젝트</SecondTitle>
       <Project

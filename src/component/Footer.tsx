@@ -7,37 +7,40 @@ import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Container = tw.div`
     bg-green-500 py-7 flex flex-col items-center
 `;
-const BtnWrapper = tw.div`
+const BtnContainer = tw.div`
     flex
 `;
-const IconBtn = tw.div`
+const BtnWrapper = tw.div`
     bg-white rounded-xl m-3
 `;
-const TistoryBtn = tw.img`
-    w-[2.8rem] 
+const TistoryBtnWrapper = tw.div`
+    rounded-xl m-3
+`;
+const Btn = tw.img`
+    w-[3rem] 
 `;
 
 const Footer = () => {
   return (
     <>
       <Container>
-        <BtnWrapper>
-          <IconBtn>
+        <BtnContainer>
+          <BtnWrapper>
             <a href="mailto:wldn0804@gmail.com" target="_blank">
-              <TistoryBtn src="/mail.png" />
+              <Btn src="/mail.png" />
             </a>
-          </IconBtn>
-          <IconBtn>
+          </BtnWrapper>
+          <BtnWrapper>
             <a href="https://github.com/jiwoo84" target="_blank">
-              <TistoryBtn src="/github.png" />
+              <Btn src="/github.png" />
             </a>
-          </IconBtn>
-          <IconBtn>
+          </BtnWrapper>
+          <TistoryBtnWrapper>
             <a href="https://jiwoo84.tistory.com/" target="_blank">
-              <TistoryBtn src="/squareTistory.png" />
+              <Btn src="/squareTistory.png" />
             </a>
-          </IconBtn>
-        </BtnWrapper>
+          </TistoryBtnWrapper>
+        </BtnContainer>
         <p>© 2023. Kwak Jiwoo. All rights reserved.</p>
       </Container>
     </>
