@@ -2,24 +2,11 @@ import React, { useEffect, useRef } from "react";
 import { Collapse } from "flowbite";
 
 const Navbar = () => {
-  // 스크롤 이동 onclike event 부여
-  const aboutComponent = document.getElementById("about");
-  const projectComponent = document.getElementById("project");
-  const skillComponent = document.getElementById("skill");
-  const educationComponent = document.getElementById("education");
-
-  const onClickAbout = () => {
-    aboutComponent?.scrollIntoView({ behavior: "smooth" });
-  };
-  const onClickProject = () => {
-    projectComponent?.scrollIntoView({ behavior: "smooth" });
-  };
-  const onClickSkill = () => {
-    skillComponent?.scrollIntoView({ behavior: "smooth" });
-  };
-  const onClickeducation = () => {
-    educationComponent?.scrollIntoView({ behavior: "smooth" });
-  };
+  //  클릭이벤트로 이동할 엘리먼트 미리 선언
+  let aboutComponent: HTMLElement;
+  let projectComponent: HTMLElement;
+  let skillComponent: HTMLElement;
+  let educationComponent: HTMLElement;
 
   useEffect(() => {
     // navbar 기능
@@ -33,6 +20,12 @@ const Navbar = () => {
     if (targetEl && triggerEl) {
       const collapse = new Collapse(targetEl, triggerEl);
     }
+
+    // 선언한 변수에 엘리먼트 할당
+    aboutComponent = document.getElementById("about")!;
+    projectComponent = document.getElementById("project")!;
+    skillComponent = document.getElementById("skill")!;
+    educationComponent = document.getElementById("education")!;
   }, []);
 
   return (
@@ -73,7 +66,9 @@ const Navbar = () => {
               <a
                 className="block cursor-pointer py-2 pl-3 pr-4 text-white text-lg font-bold bg-green-500 rounded md:hover:text-green-500 md:bg-transparent md:text-gray-700 md:p-0 dark:text-white"
                 aria-current="page"
-                onClick={() => onClickAbout()}
+                onClick={() =>
+                  aboutComponent?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 About
               </a>
@@ -82,7 +77,9 @@ const Navbar = () => {
               <a
                 className="block cursor-pointer py-2 pl-3 pr-4 text-gray-700 text-lg font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-500 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 aria-current="page"
-                onClick={() => onClickProject()}
+                onClick={() =>
+                  projectComponent?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 Project
               </a>
@@ -90,7 +87,9 @@ const Navbar = () => {
             <li>
               <a
                 className="block cursor-pointer py-2 pl-3 pr-4 text-gray-700 text-lg font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-500 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                onClick={() => onClickSkill()}
+                onClick={() =>
+                  skillComponent?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 Skill
               </a>
@@ -98,7 +97,9 @@ const Navbar = () => {
             <li>
               <a
                 className="block cursor-pointer py-2 pl-3 pr-4 text-gray-700 text-lg font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-green-500 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                onClick={() => onClickeducation()}
+                onClick={() =>
+                  educationComponent?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 Education
               </a>
