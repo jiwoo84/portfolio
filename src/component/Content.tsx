@@ -10,7 +10,8 @@ const Container = tw.div`
     flex
     flex-col
     mx-auto
-    mt-20
+    md:mt-20
+    lg:mt-20
 `;
 
 const Content: React.FC = () => {
