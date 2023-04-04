@@ -68,7 +68,7 @@ const About = () => {
 export default About;
 
 const Container = tw.div`
-  flex flex-col md:flex-row justify-center items-center px-[10%] pt-[15rem] md:pt-[4rem] mb-10 h-[90vh] box-border
+  flex flex-col md:flex-row justify-center items-center mt-[7rem] md:mt-[0] px-[10%] py-[15rem] mb-10 h-[90vh] box-border
 `;
 const Img = tw.img`
   rounded-[50%] w-[50%] md:w-[40%] lg:w-[25%] mb-5  md:ml-20 lg:ml-20 md:mb-16 lg:mb-16
