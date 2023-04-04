@@ -17,7 +17,7 @@ const TistoryBtnWrapper = tw.div`
     rounded-xl m-3
 `;
 const Btn = tw.img`
-    w-[3rem] 
+    w-[3rem] hover:scale-110
 `;
 
 const Footer = () => {

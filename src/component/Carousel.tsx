@@ -8,7 +8,7 @@ const SliderWrapper = tw.div`
   w-[100%] mb-5 lg:mt-10 lg:ml-7
 `;
 const StyledSlider = tw(Slider)`
-  mx-[auto] w-[16rem] sm:w-[30rem] md:w-[30rem] lg:w-[30rem] mb-5 
+  mx-[auto] w-[16rem] sm:w-[30rem] md:w-[30rem] lg:w-[30rem] mb-5 bg-gray-200
 `;
 const NextArrowImg = tw.img`
   h-[1.5rem] w-[1.5rem] sm:h-[2rem] sm:w-[2rem] 

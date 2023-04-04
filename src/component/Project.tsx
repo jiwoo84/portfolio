@@ -1,6 +1,7 @@
-import React, { HtmlHTMLAttributes, ReactNode, useEffect } from "react";
+import React, { ReactNode, useContext } from "react";
 import tw from "tailwind-styled-components";
 import Carousel from "./Carousel";
+import ModalContainer from "./Modal";
 
 interface ProjectProps {
   img: string;
@@ -13,44 +14,8 @@ interface ProjectProps {
   backend: string;
   deployment: string;
   children: ReactNode;
+  modalContentTxt: string;
 }
-
-const Container = tw.div`
-    flex flex-col lg:flex-row bg-white hover:translate-y-[5px]  hover:shadow-xl py-10 px-3 sm:px-5 md:px-10 lg:px-10 mb-5 rounded-2xl
-`;
-const Title = tw.h2`
-  text-[1.5rem] font-extrabold text-green-500 font-sans
-`;
-const Date = tw.p`
-  text-sm text-gray-400
-`;
-const DetailContainer = tw.div`
-  px-5 lg:ml-20 w-[100%]
-`;
-const Describe = tw.div`
-  py-5 
-`;
-const ReadMeWrapper = tw.div`
-  flex justify-end
-`;
-const ReadMeBtn = tw.button`
-  text-green-700 hover:text-white border border-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-10 py-2.5 text-center mr-2 mb-2 dark:border-green-500 dark:text-green-500 dark:hover:text-white dark:hover:bg-green-600 dark:focus:ring-green-800
-`;
-const DetailBox = tw.div`
-  
-`;
-const DetailList = tw.div`
-  flex flex-col sm:flex-row md:flex-row lg:flex-row mb-2
-`;
-const DetailTitle = tw.div`
-  w-[9rem] text-green-500 font-bold underline mb-1
-`;
-const DetailContent = tw.div`
-  w-[100%]
-`;
-const Hr = tw.hr`
-  my-5
-`;
 
 const Project = ({
   img,
@@ -63,6 +28,7 @@ const Project = ({
   backend,
   deployment,
   children,
+  modalContentTxt,
 }: ProjectProps) => {
   return (
     <Container>
@@ -75,11 +41,7 @@ const Project = ({
         <Date>{date}</Date>
         <Describe>{children}</Describe>
         <ReadMeWrapper>
-          <ReadMeBtn>
-            <a href="#" target="_blank">
-              상세보기
-            </a>
-          </ReadMeBtn>
+          <ModalContainer modalContentTxt={modalContentTxt} />
         </ReadMeWrapper>
         <Hr />
         <DetailBox>
@@ -116,5 +78,40 @@ const Project = ({
     </Container>
   );
 };
+
+const Container = tw.div`
+    flex flex-col lg:flex-row bg-white  hover:shadow-xl py-10 px-3 sm:px-5 md:px-10 lg:px-10 mb-5 rounded-2xl
+`;
+const Title = tw.h2`
+  text-[1.5rem] md:text-[2rem] lg:text-[2rem] font-extrabold text-green-500 mb-2
+`;
+const Date = tw.p`
+  text-sm text-gray-400
+`;
+const DetailContainer = tw.div`
+  px-5 lg:ml-20
+`;
+const Describe = tw.div`
+  py-5 
+`;
+const ReadMeWrapper = tw.div`
+  flex justify-end
+`;
+
+const DetailBox = tw.div`
+  
+`;
+const DetailList = tw.div`
+  flex flex-col sm:flex-row md:flex-row lg:flex-row mb-2
+`;
+const DetailTitle = tw.div`
+  w-[9rem] text-green-500 font-bold underline mb-1
+`;
+const DetailContent = tw.div`
+  w-[100%]
+`;
+const Hr = tw.hr`
+  my-5
+`;
 
 export default Project;

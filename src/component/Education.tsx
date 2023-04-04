@@ -3,7 +3,7 @@ import tw from "tailwind-styled-components";
 import Title from "./Title";
 
 const Container = tw.div`
-  bg-[#f5f7f2] px-[5%] md:px-[10%] py-10 flex flex-col md:flex-row lg:flex-row
+  bg-[#f5f7f2] px-[5%] md:px-[10%] lg:md:px-[10%] pt-10 pb-20 flex flex-col md:flex-row lg:flex-row
 `;
 const ListContainer = tw.div`
   flex flex-col mt-10 ml-5 md:mt-[4rem] md:ml-32

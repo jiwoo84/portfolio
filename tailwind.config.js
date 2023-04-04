@@ -10,6 +10,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require("flowbite/plugin"), require("@tailwindcss/typography")],
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
 };

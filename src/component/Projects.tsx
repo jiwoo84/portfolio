@@ -1,8 +1,9 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import Project from "./Project";
 import tw from "tailwind-styled-components";
 import Title from "./Title";
 import SecondTitle from "./SecondTitle";
+import { hugging, nadoddam } from "@/public/readme";
 
 const Container = tw.div`
   bg-[#f5f7f2] px-[5%] md:px-[10%] py-10
@@ -15,21 +16,19 @@ const Spaces = tw.p`
   mb-3
 `;
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <Container id="project">
       <Title length="w-[8rem]">Project</Title>
       <SecondTitle>개인 프로젝트</SecondTitle>
       <Project
         img={JSON.stringify([
-          "/나도땀1.png",
-          "/나도땀2.png",
-          "/나도땀3.png",
-          "/나도땀4.png",
-          "/나도땀5.png",
-          "/나도땀6.png",
+          "/포트폴리오1.png",
+          "/포트폴리오2.png",
+          "/포트폴리오3.png",
+          "/포트폴리오4.png",
         ])}
-        title="포트폴리오 웹페이지"
+        title="포트폴리오 웹 사이트"
         date="2023.03.24 ~ (1주)"
         features="구직자 정보, 프로젝트 내역, 학력, 스킬"
         repository="https://github.com/jiwoo84/portfolio"
@@ -37,6 +36,7 @@ const Projects = () => {
         backend="Node.js express MySQL Sequelize"
         deployment="AWS"
         posting="https://jiwoo84.tistory.com/155"
+        modalContentTxt={nadoddam}
       >
         <div>
           초기 로딩 속도가 중요하기에 <Emphasis>Next.js</Emphasis>를 사용해{" "}
@@ -72,6 +72,7 @@ const Projects = () => {
         backend="Node.js express MySQL Sequelize"
         deployment="AWS"
         posting="https://jiwoo84.tistory.com/155"
+        modalContentTxt={nadoddam}
       >
         <div>
           <b>농장과 소비자의 상생을 돕기 위해 만든 체험 예약 서비스</b>입니다.
@@ -79,7 +80,7 @@ const Projects = () => {
           되었습니다.
           <Spaces />
           회원가입&로그인, 농장 회원 관리 페이지 등{" "}
-          <Emphasis>중요 로직을 담당</Emphasis>했으며, 전체 페이지의 7/14를
+          <Emphasis>중요 로직을 담당</Emphasis>했으며, 전체 페이지의 6/14를
           구현하며 <Emphasis>최대로 기여</Emphasis>했습니다. <Spaces />
           좋은 UX를 제공하기 위해 React를 사용해{" "}
           <Emphasis>CSR 방식의 SPA</Emphasis>를 구축했습니다. 리로드없는 페이지
@@ -111,6 +112,7 @@ const Projects = () => {
         backend="Node.js express MySQL Sequelize"
         deployment="AWS"
         posting="https://jiwoo84.tistory.com/155"
+        modalContentTxt={hugging}
       >
         <div>
           <b>자바스크립트의 기초를 다질 수 있었던 프로젝트</b>입니다. 데이터
@@ -128,21 +130,6 @@ const Projects = () => {
           있었습니다.
         </div>
       </Project>
-      <SecondTitle>진행중인 프로젝트</SecondTitle>
-
-      <Project
-        img={JSON.stringify(["/허깅1.png", "/허깅2.png"])}
-        title="ManMo: 만나서 모하지?"
-        date="2022.3.05 ~ 진행중"
-        features="회원가입 및 로그인, 장바구니, 일반 회원 주문/ 정보 관리, 관리자 주문/ 상품/ 카테고리 관리"
-        repository="https://github.com/jiwoo84/Nado-ddam"
-        frontend="React, Javascript, Redux, Styled-components, SCSS"
-        backend="Node.js express MySQL Sequelize"
-        deployment="AWS"
-        posting="https://jiwoo84.tistory.com/155"
-      />
     </Container>
   );
 };
-
-export default Projects;
