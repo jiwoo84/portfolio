@@ -10,8 +10,6 @@ interface titleProps {
   children: ReactNode;
 }
 
-const TitleWrapper = tw.div`
-`;
 const TitleText = tw.h1`
   text-4xl mt-5 mb-3 font-bold
 `;
@@ -21,10 +19,10 @@ const Separator = tw.div<SeparatorProps>`
 
 const Title = ({ length, children }: titleProps) => {
   return (
-    <TitleWrapper>
+    <div>
       <TitleText>{children}</TitleText>
       <Separator length={length} />
-    </TitleWrapper>
+    </div>
   );
 };
 

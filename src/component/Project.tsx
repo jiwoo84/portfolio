@@ -1,7 +1,7 @@
 import React, { ReactNode, useContext } from "react";
 import tw from "tailwind-styled-components";
-import Carousel from "./Carousel";
-import ModalContainer from "./Modal";
+import Carousel from "../module/Carousel";
+import ModalContainer from "../module/Modal";
 
 interface ProjectProps {
   img: string;
@@ -10,8 +10,8 @@ interface ProjectProps {
   features: string;
   repository: string;
   frontend: string;
-  posting: string;
-  backend: string;
+  posting: string | null;
+  backend: string | null;
   deployment: string;
   children: ReactNode;
   modalContentTxt: string;
@@ -44,43 +44,48 @@ const Project = ({
           <ModalContainer modalContentTxt={modalContentTxt} />
         </ReadMeWrapper>
         <Hr />
-        <DetailBox>
-          <DetailList>
-            <DetailTitle>주요 기능</DetailTitle>
-            <DetailContent>{features}</DetailContent>
-          </DetailList>
-          <DetailList>
-            <DetailTitle>Github</DetailTitle>
-            <DetailContent>
-              <a href={repository}>{repository}</a>
-            </DetailContent>
-          </DetailList>
+
+        <DetailList>
+          <DetailTitle>주요 기능</DetailTitle>
+          <DetailContent>{features}</DetailContent>
+        </DetailList>
+        <DetailList>
+          <DetailTitle>Github</DetailTitle>
+          <DetailContent>
+            <a href={repository}>{repository}</a>
+          </DetailContent>
+        </DetailList>
+        {posting && (
           <DetailList>
             <DetailTitle>회고</DetailTitle>
             <DetailContent>
               <a href={posting}>{posting}</a>
             </DetailContent>
           </DetailList>
-          <DetailList>
-            <DetailTitle>Frontend</DetailTitle>
-            <DetailContent>{frontend}</DetailContent>
-          </DetailList>
+        )}
+        <DetailList>
+          <DetailTitle>Frontend</DetailTitle>
+          <DetailContent>{frontend}</DetailContent>
+        </DetailList>
+        {backend && (
           <DetailList>
             <DetailTitle>Backend</DetailTitle>
             <DetailContent>{backend}</DetailContent>
           </DetailList>
-          <DetailList>
-            <DetailTitle>Deployment</DetailTitle>
-            <DetailContent>{deployment}</DetailContent>
-          </DetailList>
-        </DetailBox>
+        )}
+        <DetailList>
+          <DetailTitle>Deployment</DetailTitle>
+          <DetailContent>{deployment}</DetailContent>
+        </DetailList>
       </DetailContainer>
     </Container>
   );
 };
 
+export default Project;
+
 const Container = tw.div`
-    flex flex-col lg:flex-row bg-white  hover:shadow-xl py-10 px-3 sm:px-5 md:px-10 lg:px-10 mb-5 rounded-2xl
+    flex flex-col xl:flex-row bg-white hover:shadow-xl py-10 px-3 sm:px-5 md:px-10 lg:px-10 mb-5 rounded-2xl 
 `;
 const Title = tw.h2`
   text-[1.5rem] md:text-[2rem] lg:text-[2rem] font-extrabold text-green-500 mb-2
@@ -89,17 +94,13 @@ const Date = tw.p`
   text-sm text-gray-400
 `;
 const DetailContainer = tw.div`
-  px-5 lg:ml-20
+  px-5 md:px-14 xl:ml-20
 `;
 const Describe = tw.div`
   py-5 
 `;
 const ReadMeWrapper = tw.div`
   flex justify-end
-`;
-
-const DetailBox = tw.div`
-  
 `;
 const DetailList = tw.div`
   flex flex-col sm:flex-row md:flex-row lg:flex-row mb-2
@@ -113,5 +114,3 @@ const DetailContent = tw.div`
 const Hr = tw.hr`
   my-5
 `;
-
-export default Project;

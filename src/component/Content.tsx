@@ -4,19 +4,11 @@ import Skill from "@/src/component/Skill";
 import Footer from "./Footer";
 import About from "./About";
 import { Projects } from "./Projects";
-import Wave from "./Wave";
-
-const Container = tw.div`
-    flex
-    flex-col
-    mx-auto
-    md:mt-20
-    lg:mt-20
-`;
+import Wave from "../element/Wave";
 
 const Content: React.FC = () => {
   return (
-    <Container id="about">
+    <Container>
       <Wave />
       <About />
       <Projects />
@@ -28,3 +20,11 @@ const Content: React.FC = () => {
 };
 
 export default Content;
+
+const Container = tw.div`
+    flex
+    flex-col
+    mx-auto
+    md:mt-20
+    lg:mt-20
+`;

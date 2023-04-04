@@ -1,11 +1,11 @@
-import { ReactNode, useEffect } from "react";
+import { useEffect } from "react";
 import tw from "tailwind-styled-components";
 import { Modal } from "flowbite";
 import type { ModalOptions, ModalInterface } from "flowbite";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { useRecoilState } from "recoil";
-import { modalContentState } from "./../../recoil";
+import { modalContentState } from "../../recoil";
 
 interface ModalContainerProps {
   modalContentTxt: string;
@@ -94,7 +94,7 @@ const ModalContainer = ({ modalContentTxt }: ModalContainerProps) => {
   );
 };
 
+export default ModalContainer;
+
 const Container = tw.div``;
 const MarkDownContainer = tw.div``;
-
-export default ModalContainer;

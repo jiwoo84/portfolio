@@ -1,28 +1,9 @@
 import React from "react";
-import Title from "./Title";
+import Title from "../element/Title";
 import tw from "tailwind-styled-components";
-import SecondTitle from "./SecondTitle";
+import SecondTitle from "../element/SecondTitle";
 
-const Container = tw.div`
-  px-[5%] md:px-[10%] pt-10 pb-16
-`;
-const SkillContainer = tw.div`
-`;
-const SkillWrapper = tw.div`
- grid grid-cols-[repeat(auto-fill,minmax(20rem,1fr))] gap-3 sm:gap-7 md:gap-7 lg:gap-7
-`;
-const SkillBox = tw.div`
-w-[100%] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100
-`;
-const SkillName = tw.h3`
- text-xl font-bold mb-2
-`;
-const SkillList = tw.ol``;
-const Li = tw.li`
-  mb-1
-`;
-
-const Skill: React.FC = () => {
+const Skill = () => {
   return (
     <Container id="skill">
       <Title length="w-[5.5rem]">Skill</Title>
@@ -37,7 +18,6 @@ const Skill: React.FC = () => {
               <Li>- 렌더링 성능 개선 경험 보유</Li>
             </SkillList>
           </SkillBox>
-
           <SkillBox>
             <SkillName className="text-[#2f74c0]">Typescript</SkillName>
             <SkillList>
@@ -45,7 +25,6 @@ const Skill: React.FC = () => {
               <Li>- 타입 추론 활용하여 개발자 경험 개선 가능</Li>
             </SkillList>
           </SkillBox>
-
           <SkillBox>
             <SkillName className="text-[#f2be4e]">Javascript</SkillName>
             <SkillList>
@@ -108,3 +87,22 @@ const Skill: React.FC = () => {
 };
 
 export default Skill;
+
+const Container = tw.div`
+  px-[5%] md:px-[10%] pt-10 pb-16
+`;
+const SkillContainer = tw.div`
+`;
+const SkillWrapper = tw.div`
+ grid grid-cols-[repeat(auto-fill,minmax(20rem,1fr))] gap-3 sm:gap-7 md:gap-7 lg:gap-7
+`;
+const SkillBox = tw.div`
+w-[100%] p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100
+`;
+const SkillName = tw.h3`
+ text-xl font-bold mb-2
+`;
+const SkillList = tw.ol``;
+const Li = tw.li`
+  mb-1
+`;

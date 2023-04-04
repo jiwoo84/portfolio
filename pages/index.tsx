@@ -1,12 +1,6 @@
 import tw from "tailwind-styled-components";
-import Navbar from "../src/component/Navbar";
+import Navbar from "../src/module/Navbar";
 import Content from "./../src/component/Content";
-import { createContext } from "react";
-import Footer from "@/src/component/Footer";
-
-const Display = tw.div`
-  flex
-`;
 
 const Home: React.FC = () => {
   return (
@@ -18,3 +12,7 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+const Display = tw.div`
+  flex
+`;

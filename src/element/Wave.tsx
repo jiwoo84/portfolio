@@ -1,13 +1,5 @@
 import tw from "tailwind-styled-components";
 
-const Container = tw.div`
-    absolute w-[100%] h-[200px] overflow-hidden z-[-1]
-`;
-
-const Wrapper = tw.div`
-    w-[100%] h-[100%]
-`;
-
 const Wave = () => {
   return (
     <Container>
@@ -20,3 +12,10 @@ const Wave = () => {
 };
 
 export default Wave;
+
+const Container = tw.div`
+    absolute w-[100%] h-[200px] overflow-hidden z-[-1]
+`;
+const Wrapper = tw.div`
+    w-[100%] h-[100%]
+`;

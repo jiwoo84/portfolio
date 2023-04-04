@@ -1,9 +1,9 @@
 import React, { createContext, useState } from "react";
 import Project from "./Project";
 import tw from "tailwind-styled-components";
-import Title from "./Title";
-import SecondTitle from "./SecondTitle";
-import { hugging, nadoddam } from "@/public/readme";
+import Title from "../element/Title";
+import SecondTitle from "../element/SecondTitle";
+import { hugging, nadoddam, portfolio } from "@/public/readme";
 
 const Container = tw.div`
   bg-[#f5f7f2] px-[5%] md:px-[10%] py-10
@@ -23,20 +23,20 @@ export const Projects = () => {
       <SecondTitle>개인 프로젝트</SecondTitle>
       <Project
         img={JSON.stringify([
-          "/포트폴리오1.png",
-          "/포트폴리오2.png",
-          "/포트폴리오3.png",
-          "/포트폴리오4.png",
+          "projects/포트폴리오1.png",
+          "projects/포트폴리오2.png",
+          "projects/포트폴리오3.png",
+          "projects/포트폴리오4.png",
         ])}
         title="포트폴리오 웹 사이트"
         date="2023.03.24 ~ (1주)"
         features="구직자 정보, 프로젝트 내역, 학력, 스킬"
         repository="https://github.com/jiwoo84/portfolio"
-        frontend="Next.js, React, Typescript, Redux, Styled-components, SCSS"
-        backend="Node.js express MySQL Sequelize"
-        deployment="AWS"
-        posting="https://jiwoo84.tistory.com/155"
-        modalContentTxt={nadoddam}
+        frontend="Next.js, React, Typescript, Recoil, Tailwind, Styled-components"
+        backend={null}
+        deployment="Vercel"
+        posting={null}
+        modalContentTxt={portfolio}
       >
         <div>
           초기 로딩 속도가 중요하기에 <Emphasis>Next.js</Emphasis>를 사용해{" "}
@@ -47,8 +47,11 @@ export const Projects = () => {
           가독성 좋고 스타일에 자유도가 높은 <Emphasis>tailwind</Emphasis>를
           사용했고, Styled-components와 결합해 리액트 컴포넌트의 장점을
           극대화했습니다.
+          <Spaces />
+          웹, 모바일 뿐만 아니라 웹 화면의 크기에도 반응하는{" "}
+          <Emphasis>반응형</Emphasis> 웹 사이트를 구축했습니다.{" "}
           <Emphasis> UI & UX를 깊게 고민</Emphasis>
-          하여, 스스로 디자인했습니다.
+          하여 디자인했으며, 페이지 전환 없는 스크롤 다운 페이지를 구현했습니다.
           <Spaces />
           Next.js에 익숙해진 계기가 되었고, 많은 이들의 유입을 위해{" "}
           <Emphasis>검색엔진최적화(SEO)</Emphasis>에 신경 쓴 프로젝트입니다.
@@ -57,12 +60,12 @@ export const Projects = () => {
       <SecondTitle>팀 프로젝트</SecondTitle>
       <Project
         img={JSON.stringify([
-          "/나도땀1.png",
-          "/나도땀2.png",
-          "/나도땀3.png",
-          "/나도땀4.png",
-          "/나도땀5.png",
-          "/나도땀6.png",
+          "projects/나도땀1.png",
+          "projects/나도땀2.png",
+          "projects/나도땀3.png",
+          "projects/나도땀4.png",
+          "projects/나도땀5.png",
+          "projects/나도땀6.png",
         ])}
         title="농장 체험 예약 서비스"
         date="2022.12.12 ~ 12.30 (3주)"
@@ -97,14 +100,14 @@ export const Projects = () => {
       </Project>
       <Project
         img={JSON.stringify([
-          "/허깅1.png",
-          "/허깅2.png",
-          "/허깅3.png",
-          "/허깅4.png",
-          "/허깅5.png",
-          "/허깅6.png",
+          "projects/허깅1.png",
+          "projects/허깅2.png",
+          "projects/허깅3.png",
+          "projects/허깅4.png",
+          "projects/허깅5.png",
+          "projects/허깅6.png",
         ])}
-        title="Vanila JS 쇼핑몰 구현"
+        title="Vanila JS 쇼핑몰"
         date="2022.10.31 ~ (2주)"
         features="회원가입 및 로그인, 장바구니, 일반 회원 주문/ 정보 관리, 관리자 주문/ 상품/ 카테고리 관리"
         repository="https://github.com/jiwoo84/Nado-ddam"
