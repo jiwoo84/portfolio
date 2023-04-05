@@ -1,5 +1,4 @@
-import type { NextPage } from "next";
-import React, { FC } from "react";
+import React from "react";
 import "tailwindcss/tailwind.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -9,7 +8,7 @@ import tw from "tailwind-styled-components";
 const About = () => {
   return (
     <Container>
-      <Img src="/about/얼굴사진.jpg" />
+      <Img src="/얼굴사진.jpg" />
       <IntroduceContainer>
         <Greeting>
           <p>HI THERE!</p>
@@ -40,7 +39,7 @@ const About = () => {
           </DescribeList>
         </Describe>
         <Contact>
-          <ResumeBtn href="about/resume.pdf" target="_blank">
+          <ResumeBtn href="/resume.pdf" target="_blank">
             Resume
           </ResumeBtn>
           <ContactBtns>
@@ -56,7 +55,7 @@ const About = () => {
             </ContactBtn>
             <TistoryBtn>
               <a href="https://jiwoo84.tistory.com/" target="_blank">
-                <ImgTistory src="/icons/tistory.svg" />
+                <ImgTistory src="/tistory.svg" />
               </a>
             </TistoryBtn>
           </ContactBtns>

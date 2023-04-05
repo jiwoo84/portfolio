@@ -2,7 +2,6 @@ import React, { ReactNode } from "react";
 import tw from "tailwind-styled-components";
 import Carousel from "../module/Carousel";
 import ModalContainer from "../module/Modal";
-import Image from "next/image";
 
 interface ProjectProps {
   img: string;
@@ -35,7 +34,9 @@ const Project = ({
     <Container>
       <Carousel>
         {img &&
-          JSON.parse(img).map((src: string) => <img src={src} key={src} />)}
+          JSON.parse(img).map((src: string) => (
+            <img src={src} key={src} alt={src} />
+          ))}
       </Carousel>
       <DetailContainer>
         <Title>{title}</Title>

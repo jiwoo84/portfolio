@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link
           rel="shortcut icon"
           sizes="16x16 32x32 64x64"
-          href="icons/favicon.png"
+          href="/favicon.png"
         />
       </Head>
       <RecoilRoot>

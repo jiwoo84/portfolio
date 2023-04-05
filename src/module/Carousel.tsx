@@ -10,13 +10,13 @@ const NextArrow = ({
   ...props
 }: CustomArrowProps) => (
   <div {...props}>
-    <img src="icons/chevron-right.png" />
+    <img src="/chevron-right.png" />
   </div>
 );
 
 const PreArrow = ({ currentSlide, slideCount, ...props }: CustomArrowProps) => (
   <div {...props}>
-    <img src="icons/chevron-left.png" />
+    <img src="/chevron-left.png" />
   </div>
 );
 

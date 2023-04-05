@@ -8,17 +8,17 @@ const Footer = () => {
         <BtnContainer>
           <BtnWrapper>
             <a href="mailto:wldn0804@gmail.com" target="_blank">
-              <Btn src="icons/mail.png" />
+              <Btn src="/mail.png" />
             </a>
           </BtnWrapper>
           <BtnWrapper>
             <a href="https://github.com/jiwoo84" target="_blank">
-              <Btn src="icons/github.png" />
+              <Btn src="/github.png" />
             </a>
           </BtnWrapper>
           <TistoryBtnWrapper>
             <a href="https://jiwoo84.tistory.com/" target="_blank">
-              <Btn src="icons/squareTistory.png" />
+              <Btn src="/squareTistory.png" />
             </a>
           </TistoryBtnWrapper>
         </BtnContainer>
