@@ -1,3 +1,4 @@
+import type { NextPage } from "next";
 import React, { FC } from "react";
 import "tailwindcss/tailwind.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,7 +14,7 @@ const About = () => {
         <Greeting>
           <p>HI THERE!</p>
           <p>
-            I'm a <b>Front-End</b> Web Developer.
+            I&apos;m a <b>Front-End</b> Web Developer.
           </p>
         </Greeting>
         <Name>곽지우</Name>

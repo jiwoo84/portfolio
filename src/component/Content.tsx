@@ -6,7 +6,7 @@ import About from "./About";
 import { Projects } from "./Projects";
 import Wave from "../element/Wave";
 
-const Content: React.FC = () => {
+const Content = () => {
   return (
     <Container>
       <Wave />

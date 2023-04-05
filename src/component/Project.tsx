@@ -1,7 +1,8 @@
-import React, { ReactNode, useContext } from "react";
+import React, { ReactNode } from "react";
 import tw from "tailwind-styled-components";
 import Carousel from "../module/Carousel";
 import ModalContainer from "../module/Modal";
+import Image from "next/image";
 
 interface ProjectProps {
   img: string;

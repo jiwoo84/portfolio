@@ -1,8 +1,5 @@
 import React from "react";
 import tw from "tailwind-styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
-import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (

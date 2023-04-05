@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="container max-w-[70rem] flex flex-wrap items-center justify-between mx-auto">
         <a href="https://flowbite.com/" className="flex items-center">
           <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
-            🌳 KJW's Portfolio
+            🌳 KJW&apos;s Portfolio
           </span>
         </a>
         <div className="flex md:order-2">

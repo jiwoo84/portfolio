@@ -5,17 +5,6 @@ import Title from "../element/Title";
 import SecondTitle from "../element/SecondTitle";
 import { hugging, nadoddam, portfolio } from "@/public/readme";
 
-const Container = tw.div`
-  bg-[#f5f7f2] px-[5%] md:px-[10%] py-10
-`;
-
-const Emphasis = tw.span`
-  text-red-500 font-bold  
-`;
-const Spaces = tw.p`
-  mb-3
-`;
-
 export const Projects = () => {
   return (
     <Container id="project">
@@ -23,10 +12,10 @@ export const Projects = () => {
       <SecondTitle>개인 프로젝트</SecondTitle>
       <Project
         img={JSON.stringify([
-          "projects/포트폴리오1.png",
-          "projects/포트폴리오2.png",
-          "projects/포트폴리오3.png",
-          "projects/포트폴리오4.png",
+          "/포트폴리오1.png",
+          "/포트폴리오2.png",
+          "/포트폴리오3.png",
+          "/포트폴리오4.png",
         ])}
         title="포트폴리오 웹 사이트"
         date="2023.03.24 ~ (1주)"
@@ -60,12 +49,12 @@ export const Projects = () => {
       <SecondTitle>팀 프로젝트</SecondTitle>
       <Project
         img={JSON.stringify([
-          "projects/나도땀1.png",
-          "projects/나도땀2.png",
-          "projects/나도땀3.png",
-          "projects/나도땀4.png",
-          "projects/나도땀5.png",
-          "projects/나도땀6.png",
+          "/나도땀1.png",
+          "/나도땀2.png",
+          "/나도땀3.png",
+          "/나도땀4.png",
+          "/나도땀5.png",
+          "/나도땀6.png",
         ])}
         title="농장 체험 예약 서비스"
         date="2022.12.12 ~ 12.30 (3주)"
@@ -100,12 +89,12 @@ export const Projects = () => {
       </Project>
       <Project
         img={JSON.stringify([
-          "projects/허깅1.png",
-          "projects/허깅2.png",
-          "projects/허깅3.png",
-          "projects/허깅4.png",
-          "projects/허깅5.png",
-          "projects/허깅6.png",
+          "/허깅1.png",
+          "/허깅2.png",
+          "/허깅3.png",
+          "/허깅4.png",
+          "/허깅5.png",
+          "/허깅6.png",
         ])}
         title="Vanila JS 쇼핑몰"
         date="2022.10.31 ~ (2주)"
@@ -126,7 +115,8 @@ export const Projects = () => {
           이슈를 만들지 않았습니다. <Spaces />
           유저의 편의성을 위해 <Emphasis>데이터 보존 처리</Emphasis>에 신경
           썼습니다. 상품 삭제시 판매량이 있다면 삭제가 아닌 판매중지 처리되며,
-          상품 카테고리 삭제시 속한 상품들은 '미설정' 카테고리로 옮겨집니다.
+          상품 카테고리 삭제시 속한 상품들은 &apos;미설정&apos; 카테고리로
+          옮겨집니다.
           <Spaces />
           <Emphasis>다음 주소 API</Emphasis>를 사용하여 주소 검색을
           구현했습니다. 처음으로 API를 커스터마이징하며 자신감을 얻을 수
@@ -136,3 +126,13 @@ export const Projects = () => {
     </Container>
   );
 };
+
+const Container = tw.div`
+  bg-[#f5f7f2] px-[5%] md:px-[10%] py-10
+`;
+const Emphasis = tw.span`
+  text-red-500 font-bold  
+`;
+const Spaces = tw.p`
+  mb-3
+`;
