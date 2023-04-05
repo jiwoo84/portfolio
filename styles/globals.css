@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --backgroundColor: #f5f8fd;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 이미지 슬라이더 화살표 없애기 */
+.slick-prev::before,
+.slick-next::before {
+  opacity: 0;
+  display: none;
+}
+.slick-slide div {
+  cursor: pointer;
+}
+
+/* 슬라이더 이미지 가운데 정렬 */
+.slick-track {
+  display: flex !important;
+  align-items: center;
+}
+
+/* modal 안 마크다운 넣기 위해 tailwind 스타일 없애기 */
+.prose {
+  max-width: 100% !important;
+}
+
+/* About 배경 웨이브 */
+.wave01 {
+  background: url(../public/wave.svg) repeat-x;
+  position: absolute;
+  width: 3200px;
+  height: 100%;
+  animation: wave01 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+.wave01:nth-of-type(2) {
+  animation: wave01 8s cubic-bezier(0.36, 0.45, 0.63, 0.6) -0.125s infinite,
+    swell 5s ease -1.25s infinite;
+}
+
+@keyframes wave01 {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0% {
+    transform: translate3d(0, -15px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+  100% {
+    transform: translate3d(0, -15px, 0);
+  }
+}
