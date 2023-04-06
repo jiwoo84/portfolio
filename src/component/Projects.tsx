@@ -33,6 +33,11 @@ export const Projects = () => {
           <Emphasis>Typescript</Emphasis>를 사용하며 타입 삽입에 익숙해졌고,
           컴파일 단계에서 에러를 처리할 수 있었습니다.
           <Spaces />
+          <Emphasis>웹 사이트 성능 최적화</Emphasis>를 통해 lighthouse
+          performancn 점수를 49점에서 92점으로 향상시켰습니다. 그리고 이미지
+          최적화를 통해 <Emphasis>초기 렌더링 속도를 50% 감소</Emphasis>
+          시켰습니다.
+          <Spaces />
           가독성 좋고 스타일에 자유도가 높은 <Emphasis>tailwind</Emphasis>를
           사용했고, Styled-components와 결합해 리액트 컴포넌트의 장점을
           극대화했습니다.

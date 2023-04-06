@@ -26,13 +26,12 @@ https://kwjportfolio.vercel.app/
 
 ### ✅ Next.js
 
-순수 React로 개발한 사이트는 SEO에 불리했습니다. 그래서 Next.js가 CSR과 SSR을 함께 지원하기 때문에 큰 인기를 얻고 있습니다.
-
 포트폴리오 사이트는 정적 페이지고 페이지 전환이 없기에 **빠른 초기 렌더링**이 중요했고, 
 
 많은 이들에게 노출되기 위해 **SEO**도 신경써야 했기에 Next.js를 사용해서 페이지를 구현했습니다.
 
 Next.js를 학습하면서 기술의 위대함을 느꼈고, 폴더 기반 라우팅의 편리함에 감탄했습니다.
+
 
 ### ✅ Typescript
 
@@ -60,10 +59,25 @@ styled-component를 함께 결합한 tailwind-styled-component를 사용했습�
 
 그 결과 PostCSS를 적용하여 JS파일 안에서 스타일 관리를 하면서, 컴포넌트 단위의 설계도 가능했습니다.
 
+* 포스팅: [[Next.js] Tailwind-styled-components의 SSR 구현하기](https://jiwoo84.tistory.com/178)
+
 ### ✅ SEO (검색 엔진 최적화)
 
 **사이트의 많은 노출**을 위해 SEO를 진행했습니다.
 구글 검색 엔진 뿐만 아니라 카카오톡 공유하기의 내용을 삽입했습니다.
+
+
+### ✅ 성능 최적화
+
+초기 렌더링이 느려서 성능 최적화가 필요했습니다.
+
+lighthouse를 통해 검사를 진행했으며 이미지 최적화, Next.js/Image 태그 사용, 불필요한 JS 파일 제거 등의 성능 최적화를 진행했습니다.
+
+그 결과 퍼포먼스 점수를 49점에서 92점으로 향상시킬 수 있었습니다.
+
+그리고 초기 렌더링 속도를 50% 감소시킬 수 있었습니다.
+
+* 포스팅: [[Next.js] LightHouse로 웹 사이트 성능 측정 및 향상](https://jiwoo84.tistory.com/179)
 
 ### ✅ 반응형 웹 사이트
 
