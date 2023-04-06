@@ -8,7 +8,7 @@ import tw from "tailwind-styled-components";
 const About = () => {
   return (
     <Container>
-      <Img src="/얼굴사진.webp" />
+      <Img src="/얼굴사진.jpg" />
       <IntroduceContainer>
         <Greeting>
           <p>HI THERE!</p>
