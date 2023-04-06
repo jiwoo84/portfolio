@@ -17,27 +17,27 @@ const About = () => {
           </p>
         </Greeting>
         <Name>곽지우</Name>
-        <Describe>
-          <DescribeList>
+        <Description>
+          <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
             &nbsp;<b>10인 미만 기업</b>에서 <b>팀 리더</b>를 맡은 경험이
             있습니다.
-          </DescribeList>
-          <DescribeList>
+          </DescriptionList>
+          <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
             &nbsp;마케팅, 연극, 영화계 등 <b>다양한 분야</b>에서{" "}
             <b>다양한 사람들</b>과 일했습니다.
-          </DescribeList>
-          <DescribeList>
+          </DescriptionList>
+          <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
             &nbsp;쇼핑몰을 관리 업무로 웹 개발을 접해서 시작하게 됐습니다.
-          </DescribeList>
-          <DescribeList>
+          </DescriptionList>
+          <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
             &nbsp;<b>UX를 중시</b>하며 <b>유저 이탈이 적은 서비스</b>를 만드는
             것이 목표입니다.
-          </DescribeList>
-        </Describe>
+          </DescriptionList>
+        </Description>
         <Contact>
           <ResumeBtn href="/resume.pdf" target="_blank">
             Resume
@@ -80,10 +80,10 @@ const Greeting = tw.h1``;
 const Name = tw.p`
   text-4xl md:text-5xl lg:text-5xl mt-2 mb-5 md:mt-5 lg:mt-5 md:mb-8 lg:mb-8 font-bold text-green-500 w-[100%]
 `;
-const Describe = tw.ol`
+const Description = tw.ol`
   md:text-lg lg:text-lg mb-5
 `;
-const DescribeList = tw.li`
+const DescriptionList = tw.li`
   mb-2 md:mb-3
 `;
 const Contact = tw.div`

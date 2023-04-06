@@ -53,7 +53,7 @@ const Skill = () => {
             <SkillList>
               <Li>- Tailwind </Li>
               <Li>- Styled-components</Li>
-              <Li> - SASS / SCSS</Li>
+              <Li>- SASS / SCSS</Li>
               <Li>- Bootstrap / Bulma</Li>
             </SkillList>
           </SkillBox>
@@ -63,7 +63,7 @@ const Skill = () => {
           <SkillBox>
             <SkillName className="text-black">Vercel</SkillName>
             <SkillList>
-              <Li>- 와이어프레임 제작 경험 보유</Li>
+              <Li>- Next.js 프로젝트 배포 경험 보유</Li>
             </SkillList>
           </SkillBox>
           <SkillBox>

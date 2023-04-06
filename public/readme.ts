@@ -11,6 +11,10 @@ export const portfolio = `
 
 웹 사이트의 특성을 고려해 기술을 선택했으며, 그 결과 Next.js와 Tailwind를 학습할 수 있었습니다.
 
+### URL
+
+https://kwjportfolio.vercel.app/
+
 ### 기술 스택
 
 - FrontEnd: React, Next.js, Typescript, Recoil
@@ -78,12 +82,18 @@ styled-component를 함께 결합한 tailwind-styled-component를 사용했습�
 그리고 빠르게 내용으로 넘어갈 수 있도록 클릭시 해당 파트로 이동하는 **헤더바를 상단에 고정**했습니다.
 
 보는 재미가 있도록 각 파트의 디자인을 다르게 했고, 여러가지 애니메이션을 부여했습니다.
+
+### ✅ Vercel를 통한 배포
+
+Next.js에서 권장하는 배포 툴인 vercel을 이용하여 배포했습니다.
+
+혼자 환경 세팅부터 배포까지 하며 서비스를 구현하는 한 사이클을 경험할 수 있었습니다.
 `;
 
 export const nadoddam = `
 # 체험 예약 서비스 - 나도땀
 
-2022.12.12 - 2022.12.30 ｜ 팀 프로젝트 (프론트 5 + 백 2)
+2022.12.12 - 2022.12.30 ｜ 팀 프로젝트 (프론트 5 / 백 2)
 
 ## 📌서비스 소개
 ---
@@ -206,7 +216,7 @@ export const nadoddam = `
 export const hugging = `
 # 바닐라 자바스크립트 쇼핑몰 - Hugging
 
-2022.10.31 - 2022.11.13 ｜ 팀 프로젝트 (프론트 3 + 백 2)
+2022.10.31 - 2022.11.13 ｜ 팀 프로젝트 (프론트 3 / 백 2)
 
 ## 📌 서비스 소개
 

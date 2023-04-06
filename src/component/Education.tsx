@@ -5,7 +5,7 @@ import Title from "../element/Title";
 const Education = () => {
   return (
     <Container id="education">
-      <Title length="w-[11rem]">Education</Title>
+      <Title length="w-[21rem]">Education & Career</Title>
       <ListContainer>
         <ListWrapper>
           <Circle />
@@ -19,6 +19,18 @@ const Education = () => {
           <ListTitle>방송통신대학교 컴퓨터과학과</ListTitle>
           <ListDate>2021.09 - 휴학</ListDate>
           <p>학점: 4.1 / 4.5 (성적장학금 증진)</p>
+        </ListWrapper>
+        <ListWrapper>
+          <Circle />
+          <ListTitle>디엘컴퍼니 (마케터)</ListTitle>
+          <ListDate>2019.10 - 2020.08</ListDate>
+          <p>- 10인 미만 기업에서 팀 리더를 맡음</p>
+          <p>
+            - 회사의 노후된 메뉴얼을 개선해 업무 속도를 50% 향상시킨 경험 보유
+          </p>
+          <p>
+            - 소비층을 고려한 마케팅 전략을 세워 매출을 30% 상승시킨 경험 보유
+          </p>
         </ListWrapper>
         <ListWrapperLast>
           <Circle />

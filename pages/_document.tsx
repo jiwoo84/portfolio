@@ -43,11 +43,14 @@ export default class MyDocument extends Document {
             name="description"
             content="프론트엔드 개발자 곽지우의 포트폴리오 웹 사이트"
           />
-          <meta property="og:title" content="개발자 곽지우의 포트폴리오" />
+          <meta property="og:title" content="곽지우의 포트폴리오" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="" />
-          <meta property="og:image" content="/titleImg.png" />
-          <meta property="og:article:author" content="곽지우" />
+          <meta property="og:image" content="/포트폴리오1.png" />
+          <meta
+            property="og:description"
+            content="프론트엔드 개발자 곽지우의 이정표가 담긴 포트폴리오입니다."
+          />
           <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
             rel="stylesheet"
