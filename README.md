@@ -110,7 +110,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 <br/>
 
-## 실행 방법
+## 📌 실행 방법
 
 First, run the development server:
 
