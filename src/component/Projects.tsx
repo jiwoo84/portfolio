@@ -80,10 +80,13 @@ export const Projects = () => {
           <Emphasis>중요 로직을 담당</Emphasis>했으며, 전체 페이지의 6/14를
           구현하며 <Emphasis>최대로 기여</Emphasis>했습니다. <Spaces />
           좋은 UX를 제공하기 위해 React를 사용해{" "}
-          <Emphasis>CSR 방식의 SPA</Emphasis>를 구축했습니다. 리로드없는 페이지
+          <Emphasis>CSR 방식의 SPA</Emphasis>를 구축했습니다. 리로드 없는 페이지
           전환을 위해 react-router-dom을 사용했습니다. 이 과정에서{" "}
           <Emphasis>라우팅, CSR, SSR, SSG</Emphasis>에 대한 개념을 더욱 확실하게
           숙지할 수 있었습니다. <Spaces />
+          데이터 전달 형태를 변경하여 API 호출 횟수를 50% 줄여서{" "}
+          <Emphasis>렌더링 성능을 개선</Emphasis>했습니다.
+          <Spaces />
           상태값은 <Emphasis>redux-toolkit</Emphasis>을 사용하여 전역적으로
           관리했습니다. 안정적이고 많이 사용되는 기술인만큼 한 번은 써봐야겠다는
           생각으로 선택했습니다. <Spaces />
