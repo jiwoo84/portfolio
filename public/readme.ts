@@ -177,7 +177,7 @@ export const nadoddam = `
 ![nadoddam3](https://user-images.githubusercontent.com/86906350/229515227-9630550f-2169-4adc-82d9-ca9e6aee8724.png)
 
 - 사용자 편의성을 위해 다음 주소 API 사용
-- 데이터 전달 형태를 변경하여 API 호출 횟수를 50% 줄임 -> 렌더링 성능 개선
+- 데이터 전달 형태를 변경하여 API 호출 횟수를 50% 줄임
     - 포스팅: [[Javascript] formData로 이미지, 문자열 묶어서 전달하기](https://jiwoo84.tistory.com/159)
 - 팀원이 해결하지 못한 파트를 이어받아 하루만에 구현 완료함
     - 마감이 얼마 남지 않은 상황이었지만, 많은 일을 할수록 많은 것을 배울 수 있다고 생각해서 자원함

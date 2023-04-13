@@ -38,14 +38,15 @@ export const Projects = () => {
           최적화를 통해 <Emphasis>초기 렌더링 속도를 50% 감소</Emphasis>
           시켰습니다.
           <Spaces />
-          가독성 좋고 스타일에 자유도가 높은 <Emphasis>tailwind</Emphasis>를
-          사용했고, Styled-components와 결합해 리액트 컴포넌트의 장점을
-          극대화했습니다.
+          스타일의 확정성과 유지보수를 위해 <Emphasis>tailwind</Emphasis>를
+          사용했고, Styled-components와 결합해 가독성을 높이고 리액트 컴포넌트의
+          장점을 극대화했습니다.
           <Spaces />
           웹, 모바일 뿐만 아니라 웹 화면의 크기에도 반응하는{" "}
           <Emphasis>반응형</Emphasis> 웹 사이트를 구축했습니다.{" "}
-          <Emphasis> UI & UX를 깊게 고민</Emphasis>
-          하여 디자인했으며, 페이지 전환 없는 스크롤 다운 페이지를 구현했습니다.
+          <Emphasis> UX에 대해 깊게 고민</Emphasis>
+          하여 UI를 디자인했으며, 페이지 전환 없는 스크롤 다운 페이지를
+          구현했습니다.
           <Spaces />
           Next.js에 익숙해진 계기가 되었고, 많은 이들의 유입을 위해{" "}
           <Emphasis>검색엔진최적화(SEO)</Emphasis>에 신경 쓴 프로젝트입니다.
@@ -84,8 +85,8 @@ export const Projects = () => {
           전환을 위해 react-router-dom을 사용했습니다. 이 과정에서{" "}
           <Emphasis>라우팅, CSR, SSR, SSG</Emphasis>에 대한 개념을 더욱 확실하게
           숙지할 수 있었습니다. <Spaces />
-          데이터 전달 형태를 변경하여 API 호출 횟수를 50% 줄여서{" "}
-          <Emphasis>렌더링 성능을 개선</Emphasis>했습니다.
+          데이터 전달 형태를 변경하여{" "}
+          <Emphasis>API 호출 횟수를 50% 줄였습니다</Emphasis>
           <Spaces />
           상태값은 <Emphasis>redux-toolkit</Emphasis>을 사용하여 전역적으로
           관리했습니다. 안정적이고 많이 사용되는 기술인만큼 한 번은 써봐야겠다는
