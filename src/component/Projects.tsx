@@ -38,9 +38,9 @@ export const Projects = () => {
           최적화를 통해 <Emphasis>초기 렌더링 속도를 50% 감소</Emphasis>
           시켰습니다.
           <Spaces />
-          스타일의 확정성과 유지보수를 위해 <Emphasis>tailwind</Emphasis>를
-          사용했고, Styled-components와 결합해 가독성을 높이고 리액트 컴포넌트의
-          장점을 극대화했습니다.
+          스타일의 자유도를 높이고 유지보수를 쉽게 하기 위해{" "}
+          <Emphasis>tailwind</Emphasis>를 사용했고, Styled-components와 결합해
+          가독성을 높이고 리액트 컴포넌트의 장점을 극대화했습니다.
           <Spaces />
           웹, 모바일 뿐만 아니라 웹 화면의 크기에도 반응하는{" "}
           <Emphasis>반응형</Emphasis> 웹 사이트를 구축했습니다.{" "}
