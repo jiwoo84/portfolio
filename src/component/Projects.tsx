@@ -3,7 +3,7 @@ import Project from "./Project";
 import tw from "tailwind-styled-components";
 import Title from "../element/Title";
 import SecondTitle from "../element/SecondTitle";
-import { hugging, nadoddam, portfolio } from "@/public/readme";
+import { hugging, nadoddam, portfolio } from "../../public/readme";
 
 export const Projects = () => {
   return (
@@ -34,8 +34,8 @@ export const Projects = () => {
           컴파일 단계에서 에러를 처리할 수 있었습니다.
           <Spaces />
           <Emphasis>웹 사이트 성능 최적화</Emphasis>를 통해 lighthouse
-          performancn 점수를 49점에서 92점으로 향상시켰습니다. 그리고 이미지
-          최적화를 통해 <Emphasis>초기 렌더링 속도를 50% 감소</Emphasis>
+          performancn 점수를 49점에서 92점으로, 웹 접근성 점수를 79점에서 86점으로 향상시켰습니다.
+          또한 <Emphasis>초기 렌더링 속도를 50% 감소</Emphasis>
           시켰습니다.
           <Spaces />
           스타일의 자유도를 높이고 유지보수를 쉽게 하기 위해{" "}
