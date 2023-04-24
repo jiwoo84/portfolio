@@ -39,6 +39,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link
+            rel="shortcut icon"
+            sizes="16x16 32x32 64x64"
+            href="/favicon.png"
+          />
           <meta
             name="description"
             content="프론트엔드 개발자 곽지우의 포트폴리오 웹 사이트"
@@ -64,3 +69,4 @@ export default class MyDocument extends Document {
     );
   }
 }
+

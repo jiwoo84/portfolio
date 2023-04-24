@@ -12,11 +12,6 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>곽지우의 포트폴리오</title>
-        <link
-          rel="shortcut icon"
-          sizes="16x16 32x32 64x64"
-          href="/favicon.png"
-        />
       </Head>
       <RecoilRoot>
         <Component {...pageProps} />

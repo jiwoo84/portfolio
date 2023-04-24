@@ -8,7 +8,7 @@ import tw from "tailwind-styled-components";
 const About = () => {
   return (
     <Container>
-      <Img src="/얼굴사진.jpg" />
+      <Img src="/얼굴사진.jpg" alt="프로필사진" />
       <IntroduceContainer>
         <Greeting>
           <p>HI THERE!</p>
@@ -39,23 +39,23 @@ const About = () => {
           </DescriptionList>
         </Description>
         <Contact>
-          <ResumeBtn href="/resume.pdf" target="_blank">
+          <ResumeBtn href="/resume.pdf" target="_blank" aria-label="resume-button">
             Resume
           </ResumeBtn>
           <ContactBtns>
-            <ContactBtn>
-              <a href="mailto:wldn0804@gmail.com" target="_blank">
+            <ContactBtn aria-label="email-button">
+              <a href="mailto:wldn0804@gmail.com" target="_blank" aria-label="email-link">
                 <FontAwesomeIcon icon={faEnvelope} size="2x" />
               </a>
             </ContactBtn>
-            <ContactBtn>
-              <a href="https://github.com/jiwoo84" target="_blank">
+            <ContactBtn aria-label="github-button">
+              <a href="https://github.com/jiwoo84" target="_blank" aria-label="github-link">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </ContactBtn>
-            <TistoryBtn>
-              <a href="https://jiwoo84.tistory.com/" target="_blank">
-                <ImgTistory src="/tistory.svg" />
+            <TistoryBtn aria-label="blog-button">
+              <a href="https://jiwoo84.tistory.com/" target="_blank" aria-label="blog-link">
+                <ImgTistory src="/tistory.svg" alt="blog-icon" />
               </a>
             </TistoryBtn>
           </ContactBtns>
