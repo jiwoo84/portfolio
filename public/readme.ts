@@ -3,7 +3,7 @@ export const portfolio = `
 
 2023.03.27 - 2023.04.04 ｜ 개인 프로젝트
 
-## 📌 서비스 소개
+## 서비스 소개
 
 ---
 
@@ -11,16 +11,11 @@ export const portfolio = `
 
 웹 사이트의 특성을 고려해 기술을 선택했으며, 그 결과 Next.js와 Tailwind를 학습할 수 있었습니다.
 
-### URL
-
-https://kwjportfolio.vercel.app/
-
 ### 기술 스택
 
-- **FrontEnd**: React, Next.js, Typescript, Recoil
-- **Deployment** : Vercel
+React, Next.js, Typescript, Recoil, Vercel
 
-## 📌 구현 내용
+## 구현 내용
 
 ---
 
@@ -28,7 +23,9 @@ https://kwjportfolio.vercel.app/
 ### ✅ SEO (검색 엔진 최적화)
 
 **사이트의 많은 노출**을 위해 SEO를 진행했습니다.
+
 플러그인을 사용하지 않고 Next.js에서 제공되는 Head를 사용했습니다.
+
 검색에 노출되는 내용과 카카오톡 공유하기의 내용을 삽입했습니다.
 
 - 포스팅: [[Next.js] 플러그인 사용없이 SEO(검색 엔진 최적화)하기](https://jiwoo84.tistory.com/183)
@@ -36,7 +33,7 @@ https://kwjportfolio.vercel.app/
 
 ### ✅ 성능 최적화
 
-성능 최적화를 위해 이미 최적화, 웹 접근성 향상, 불필요한 js 코드 제거를 진행했습니다. 
+성능 최적화를 위해 이미지 최적화, 웹 접근성 향상, 불필요한 js 코드 제거를 진행했습니다. 
 
 그 결과 퍼포먼스 점수 49점을 92점으로, 접근성 점수를 79점에서 86점으로 상승시킬 수 있었습니다. 
 
@@ -62,12 +59,6 @@ https://kwjportfolio.vercel.app/
 
 보는 재미가 있도록 각 파트의 디자인을 다르게 했고, 여러가지 애니메이션을 부여했습니다.
 
-### ✅ Vercel를 통한 배포
-
-Next.js에서 권장하는 배포 툴인 vercel을 이용하여 배포했습니다.
-
-혼자 환경 세팅부터 배포까지 하며 서비스를 구현하는 한 사이클을 경험할 수 있었습니다.
-
 ### ✅ Tailwind + Styled-component
 
 **스타일의 확장성과 유지보수**를 위해 Tailwind를 사용했고,
@@ -81,6 +72,12 @@ styled-component를 함께 결합한 tailwind-styled-component를 사용했습�
 그 결과 PostCSS를 적용하여 JS파일 안에서 스타일 관리를 하면서, 컴포넌트 단위의 설계도 가능했습니다.
 
 * 포스팅: [[Next.js] Tailwind-styled-components의 SSR 구현하기](https://jiwoo84.tistory.com/178)
+
+### ✅ Vercel를 통한 배포
+
+Next.js에서 권장하는 배포 툴인 vercel을 이용하여 배포했습니다.
+
+혼자 환경 세팅부터 배포까지 하며 서비스를 구현하는 한 사이클을 경험할 수 있었습니다.
 
 ### ✅ Next.js
 
@@ -105,7 +102,7 @@ export const nadoddam = `
 
 2022.12.12 - 2022.12.30 ｜ 팀 프로젝트 (프론트 5 / 백 2)
 
-## 📌서비스 소개
+## 📌 서비스 소개
 ---
 **농장과 소비자를 연결해주는 체험 예약 서비스**
 
@@ -128,7 +125,7 @@ export const nadoddam = `
 - 농장 회원 정보 등록 및 관리 (이미지, 주소, 날짜 & 시간표)
 - 농장 회원 예약 / 후기 관리
 
-### 담당 파트
+### 담당 파트 (프론트엔드)
 1. 로그인, 회원가입
 2. 농장 회원 정보 등록, 수정, 삭제
 3. 농장 회원 예약, 후기 관리
@@ -138,14 +135,17 @@ export const nadoddam = `
 
 ---
 
-화면 깜빡거림 없이 페이지 전환에 있어 **좋은 UX를 제공하는 홈페이지**를 만들고 싶었습니다. 그래서 Create React App를 사용하여 **CSR 방식으로 SPA를 구축**했고,  react-router-dom를 사용하여 **리로드 없는 페이지 전환**을 구현했습니다.
+화면 깜빡거림 없이 페이지 전환에 있어 **좋은 UX를 제공하는 홈페이지**를 만들고 싶었습니다. 
 
-처음으로 React를 사용하여 프로젝트를 진행하며 컴포넌트 단위의 설계의 유용함을 느꼈습니다. 최대한 보일러 플레이트 코드 없이 컴포넌트를 재활용 가능하도록 했으며, 그 과정에서 코드의 **확장성과 유지보수성**에 대해 많이 고민할 수 있었습니다.
+그래서 Create React App를 사용하여 **CSR 방식으로 SPA를 구축**했고,  
 
-프로젝트 진행중, **팀원이 페이지 구현을 포기하는 이슈**가 있었습니다. 자원해서 해당 페이지를 맡았고, 하루 만에 구현을 완료했습니다. 이렇게 적극적으로 소통하고 참여하다보니 14개 페이지 중 6개 페이지를 구현하면서 **최대로 기여**했습니다. 
-타인의 코드를 읽는 것에 익숙해질 수 있었고, 많은 파트를 맡은만큼 배우는 것도 많아서 즐거웠습니다. 
+react-router-dom를 사용하여 **리로드 없는 페이지 전환**을 구현했습니다.
 
-## 📌구현 파트 & 상세 설명
+React를 사용하여 프로젝트를 진행하며 컴포넌트 단위의 설계의 유용함을 느꼈고,
+
+최대한 보일러 플레이트 코드 없이 컴포넌트를 재활용 가능하도록 했습니다.
+
+## 📌 구현 파트 & 상세 설명
 
 ---
 
@@ -158,6 +158,7 @@ export const nadoddam = `
 - 모달 내부에서 관리할 상태값을 최소화하기 위해 react-modal 사용
 - 재사용성을 높이기 위해 prop로 가로, 세로 길이와 overflow 유형을 지정할 수 있게 구현
 - 포스팅: [[React] 모달 만들기 (React + redux-tookit + react-modal)](https://jiwoo84.tistory.com/158)
+- [소스코드 보기](https://github.com/jiwoo84/Nado-ddam/blob/master/client/src/components/Modal.jsx)
 
 ### **✅ 로그인, 회원가입**
 
@@ -175,10 +176,7 @@ export const nadoddam = `
 - 사용자 편의성을 위해 다음 주소 API 사용
 - 데이터 전달 형태를 변경하여 API 호출 횟수를 50% 줄임
     - 포스팅: [[Javascript] formData로 이미지, 문자열 묶어서 전달하기](https://jiwoo84.tistory.com/159)
-- 팀원이 해결하지 못한 파트를 이어받아 하루만에 구현 완료함
-    - 마감이 얼마 남지 않은 상황이었지만, 많은 일을 할수록 많은 것을 배울 수 있다고 생각해서 자원함
-    - 페이지 url과 컴포넌트 관계부터 재구성, 4개의 파일을 해체하여 기능 구현 완료
-    - 팀원을 돕고 타인의 코드를 읽고 해석해보며 얻는 것이 많았음
+- [소스코드 보기](https://github.com/jiwoo84/Nado-ddam/blob/master/client/src/pages/EditFarm.jsx)
 
 ### **✅ 농장 예약 & 후기 관리**
 
@@ -188,6 +186,7 @@ export const nadoddam = `
     - 포스팅: [[React] 프론트단에서 페이지네이션 구현하기](https://jiwoo84.tistory.com/170)
 - 코드의 길이를 줄이고 정확한 숫자 표시를 위해 라이브러리 moment 사용
 - 데이터를 받아 프론트단에서 정렬, 필터링 구현
+- [소스코드 보기](https://github.com/jiwoo84/Nado-ddam/blob/master/client/src/components/FarmReservationTable.jsx)
 
 ### **✅ URL 직접 접근 제한**
 

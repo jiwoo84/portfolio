@@ -25,8 +25,10 @@ const About = () => {
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;마케팅, 연극, 영화계 등 <b>다양한 분야</b>에서{" "}
-            <b>다양한 사람들</b>과 일했습니다.
+            &nbsp;다양한 분야에서 다양한 사람들과 일하며 <b>
+              커뮤니케이션
+            </b>{" "}
+            능력을 길렀습니다.
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
@@ -39,22 +41,38 @@ const About = () => {
           </DescriptionList>
         </Description>
         <Contact>
-          <ResumeBtn href="/resume.pdf" target="_blank" aria-label="resume-button">
+          <ResumeBtn
+            href="/resume.pdf"
+            target="_blank"
+            aria-label="resume-button"
+          >
             Resume
           </ResumeBtn>
           <ContactBtns>
             <ContactBtn aria-label="email-button">
-              <a href="mailto:wldn0804@gmail.com" target="_blank" aria-label="email-link">
+              <a
+                href="mailto:wldn0804@gmail.com"
+                target="_blank"
+                aria-label="email-link"
+              >
                 <FontAwesomeIcon icon={faEnvelope} size="2x" />
               </a>
             </ContactBtn>
             <ContactBtn aria-label="github-button">
-              <a href="https://github.com/jiwoo84" target="_blank" aria-label="github-link">
+              <a
+                href="https://github.com/jiwoo84"
+                target="_blank"
+                aria-label="github-link"
+              >
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
             </ContactBtn>
             <TistoryBtn aria-label="blog-button">
-              <a href="https://jiwoo84.tistory.com/" target="_blank" aria-label="blog-link">
+              <a
+                href="https://jiwoo84.tistory.com/"
+                target="_blank"
+                aria-label="blog-link"
+              >
                 <ImgTistory src="/tistory.svg" alt="blog-icon" />
               </a>
             </TistoryBtn>
