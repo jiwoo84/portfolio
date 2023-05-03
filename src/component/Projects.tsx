@@ -108,18 +108,18 @@ export const Projects = () => {
         title="Vanila JS 쇼핑몰"
         date="2022.10.31 ~ (2주)"
         features="회원가입 및 로그인, 장바구니, 일반 회원 주문/ 정보 관리, 관리자 주문/ 상품/ 카테고리 관리"
-        repository="https://github.com/jiwoo84/Nado-ddam"
+        repository="https://github.com/jiwoo84/Hugging"
         frontend="React, Javascript, Redux, Styled-components, SCSS"
         backend="Node.js express MySQL Sequelize"
         deployment="AWS"
-        posting="https://jiwoo84.tistory.com/155"
+        posting="https://jiwoo84.tistory.com/154"
         modalContentTxt={hugging}
       >
         <div>
           <b>자바스크립트의 기초를 다질 수 있었던 프로젝트</b>입니다. 데이터
           호출이 가장 많은 <Emphasis>관리자 페이지 전체</Emphasis>를
-          담당했습니다. <Spaces />
-          <Emphasis>백엔드 개발자와 협업</Emphasis>하는 과정에 대해 많이 배울 수
+          담당했고, <Emphasis>주문/ 상품/ 카테고리 CRUD</Emphasis>를 구현했습니다.<Spaces /> 
+          <Emphasis>백엔드 개발자와 협업</Emphasis>하는 방식에 대해 많이 배울 수
           있었습니다. 필요한 명세를 문서로 작성했고, 적극적으로 소통하여 모호한
           이슈를 만들지 않았습니다. <Spaces />
           유저의 편의성을 위해 <Emphasis>데이터 보존 처리</Emphasis>에 신경
