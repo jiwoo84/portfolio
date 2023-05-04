@@ -2,7 +2,7 @@ import tw from "tailwind-styled-components";
 
 const Wave = () => {
   return (
-    <Container>
+    <Container id="wave">
       <Wrapper>
         <div className="wave01"></div>
         <div className="wave01"></div>

@@ -3,7 +3,7 @@ import { Collapse } from "flowbite";
 
 const Navbar = () => {
   //  클릭이벤트로 이동할 엘리먼트 미리 선언
-  let aboutComponent: HTMLElement;
+  let waveComponent: HTMLElement;
   let projectComponent: HTMLElement;
   let skillComponent: HTMLElement;
   let educationComponent: HTMLElement;
@@ -22,7 +22,7 @@ const Navbar = () => {
     }
 
     // 선언한 변수에 엘리먼트 할당
-    aboutComponent = document.getElementById("about")!;
+    waveComponent = document.getElementById("wave")!;
     projectComponent = document.getElementById("project")!;
     skillComponent = document.getElementById("skill")!;
     educationComponent = document.getElementById("education")!;
@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-40 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
       <div className="container max-w-[70rem] flex flex-wrap items-center justify-between mx-auto">
-        <a href="https://flowbite.com/" className="flex items-center">
+        <a href="https://kwjportfolio.vercel.app/" className="flex items-center">
           <span className="self-center text-xl md:text-2xl font-semibold whitespace-nowrap dark:text-white">
             🌳 KJW&apos;s Portfolio
           </span>
@@ -67,7 +67,7 @@ const Navbar = () => {
                 className="block cursor-pointer py-2 pl-3 pr-4 text-white text-lg font-bold bg-green-500 rounded md:hover:text-green-500 md:bg-transparent md:text-gray-700 md:p-0 dark:text-white"
                 aria-current="page"
                 onClick={() =>
-                  aboutComponent?.scrollIntoView({ behavior: "smooth" })
+                  waveComponent?.scrollIntoView({ behavior: "smooth" })
                 }
               >
                 About

@@ -7,7 +7,7 @@ import tw from "tailwind-styled-components";
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <Img src="/얼굴사진.jpg" alt="프로필사진" />
       <IntroduceContainer>
         <Name>곽지우</Name>
@@ -28,7 +28,7 @@ const About = () => {
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;<b>성실하고 꾸준히 노력</b>하는 성격입니다. 블로그의 포스팅과 깃허브 커밋기록으로 확인하실 수 있습니다.
+            &nbsp;<b>성실하고 꾸준히 노력</b>하는 성격입니다. 블로그의 포스팅과 깃허브 커밋 기록으로 확인하실 수 있습니다.
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />

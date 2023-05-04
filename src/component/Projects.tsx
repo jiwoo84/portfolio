@@ -18,7 +18,7 @@ export const Projects = () => {
           "/포트폴리오4.png",
         ])}
         title="포트폴리오 웹 사이트"
-        date="2023.03.24 ~ (1주)"
+        date="2023.03.24 ~ 2023.04.04 (1주)"
         features="구직자 정보, 프로젝트 내역, 학력, 스킬"
         repository="https://github.com/jiwoo84/portfolio"
         frontend="Next.js, React, Typescript, Recoil, Tailwind, Styled-components"
@@ -29,7 +29,7 @@ export const Projects = () => {
       >
         <div>
           초기 로딩 속도가 중요하기에 <Emphasis>Next.js</Emphasis>를 사용해{" "}
-          <Emphasis>SSR 정적 페이지</Emphasis>를 구현했습니다.{" "}
+          <Emphasis>SSR 페이지</Emphasis>를 구현했습니다.{" "}
           <Emphasis>Typescript</Emphasis>를 사용하며 타입 삽입에 익숙해졌고,
           컴파일 단계에서 에러를 처리할 수 있었습니다.
           <Spaces />
@@ -67,7 +67,7 @@ export const Projects = () => {
         features="일반/ 농장주 회원 회원가입 및 로그인, 체험 예약 및 결제, 농장 정보/ 시간표/ 후기 관리, 일반 회원 정보/ 예약/ 후기 관리"
         repository="https://github.com/jiwoo84/Nado-ddam"
         frontend="React, Javascript, Redux, Styled-components, SCSS"
-        backend="Node.js express MySQL Sequelize"
+        backend="Node.js, Express, MySQL, Sequelize"
         deployment="AWS"
         posting="https://jiwoo84.tistory.com/155"
         modalContentTxt={nadoddam}
@@ -109,9 +109,9 @@ export const Projects = () => {
         date="2022.10.31 ~ (2주)"
         features="회원가입 및 로그인, 장바구니, 일반 회원 주문/ 정보 관리, 관리자 주문/ 상품/ 카테고리 관리"
         repository="https://github.com/jiwoo84/Hugging"
-        frontend="React, Javascript, Redux, Styled-components, SCSS"
-        backend="Node.js express MySQL Sequelize"
-        deployment="AWS"
+        frontend="HTML5, CSS3, Javascript"
+        backend="Node.js, Express, MongoDB"
+        deployment="NGINX, PM2"
         posting="https://jiwoo84.tistory.com/154"
         modalContentTxt={hugging}
       >
