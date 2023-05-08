@@ -39,6 +39,28 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+            rel="stylesheet"
+          />
           <link
             rel="shortcut icon"
             sizes="16x16 32x32 64x64"
@@ -55,10 +77,6 @@ export default class MyDocument extends Document {
           <meta
             property="og:description"
             content="프론트엔드 개발자 곽지우의 이정표가 담긴 포트폴리오입니다."
-          />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-            rel="stylesheet"
           />
         </Head>
         <body>

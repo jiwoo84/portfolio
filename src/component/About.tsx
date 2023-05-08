@@ -1,9 +1,9 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
+import tw from "tailwind-styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faCheck } from "@fortawesome/free-solid-svg-icons";
-import tw from "tailwind-styled-components";
 
 const About = () => {
   return (
@@ -20,7 +20,7 @@ const About = () => {
         <Description>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;회사에서 <b>팀 리더</b>를 맡은 경험이 있습니다. 당시 팀원들에게 바라던 태도를 현재 제가 가질 수 있도록 실천하고 있습니다.
+            &nbsp;회사에서 <b>팀 리더</b>를 맡은 경험이 있어, 좋은 팀원의 태도를 알고 실천하고 있습니다.
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
@@ -28,11 +28,11 @@ const About = () => {
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;<b>성실하고 꾸준히 노력</b>하는 성격입니다. 블로그의 포스팅과 깃허브 커밋 기록으로 확인하실 수 있습니다.
+            &nbsp;<b>성실하고 꾸준히 노력</b>하는 성격이고, 블로그와 깃허브 기록으로 확인하실 수 있습니다.
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;<b>빠르게 습득</b>하고 <b>문제해결에 적극적</b>으로 나섭니다. 팀 프로젝트 당시 별명이 행동대장이었습니다.
+            &nbsp;<b>빠르게 습득</b>하고 <b>문제해결에 적극적</b>으로 나서서 팀 프로젝트 당시 별명이 행동대장이었습니다.
           </DescriptionList>
         </Description>
         <Contact>
