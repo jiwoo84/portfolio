@@ -2,8 +2,6 @@
 
 2023.03.27 - 2023.04.04 ｜ 개인 프로젝트
 
-<img src="https://user-images.githubusercontent.com/86906350/230710945-547a7b94-e47e-410b-85d1-fb9a73e4c08a.png" width="600px"/>
-
 <br/>
 
 ## 📌 서비스 소개
