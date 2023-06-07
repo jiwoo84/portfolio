@@ -22,21 +22,29 @@ const Education = () => {
         </ListWrapper>
         <ListWrapper>
           <Circle />
+          <ListTitle>알고리즘 스터디</ListTitle>
+          <p>알고리즘 스터디 2개를 직접 만들고 진행함</p>
+          <br />
+          <p>- Leetcode 알고리즘 스터디</p>
+          <p>- 1일 1알고리즘</p>
+        </ListWrapper>
+        <ListWrapper>
+          <Circle />
           <ListTitle>디엘컴퍼니 (마케터)</ListTitle>
           <ListDate>2019.10 - 2020.08</ListDate>
           <p>- 10인 미만 기업에서 팀 리더를 맡음</p>
           <p>
-            - 회사의 노후된 메뉴얼을 개선해 업무 속도를 50% 향상시킨 경험 보유
+            - 회사의 노후된 메뉴얼을 개선해 업무 속도 50% 향상
           </p>
           <p>
-            - 소비층을 고려한 마케팅 전략을 세워 매출을 30% 상승시킨 경험 보유
+            - 소비층을 고려한 마케팅 전략을 세워 매출 30% 상승
           </p>
         </ListWrapper>
         <ListWrapperLast>
           <Circle />
           <ListTitle>명지전문대학교 문예창작과</ListTitle>
           <ListDate>2015.03 - 2018.02</ListDate>
-          <p>소설, 비평을 주로 썼으며 올바른 글쓰기의 토대를 학습함</p>
+          <p>빠른 맥락 파악과 올바른 문장쓰기의 역량을 갖춤</p>
         </ListWrapperLast>
       </ListContainer>
     </Container>

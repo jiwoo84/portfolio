@@ -13,26 +13,29 @@ const About = () => {
         <Name>곽지우</Name>
         <IntroduceComment>
           <p>안녕하세요! <b>똑 부러지게 일하는 개발자</b> 곽지우입니다.</p>
-            <p>새로운 것을 만드는 게 좋아 문화예술계에서 일하다</p>
-            <p>업무로 만난 프로그래밍에 빠져 웹 서비스를 만들고 있습니다</p>
-          </IntroduceComment>
-          <Hr />
+          <p>업무로 만난 프로그래밍의 매력에 빠져 웹 서비스를 만들고 있습니다🥰</p>
+        </IntroduceComment>
+        <Hr />
         <Description>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;회사에서 <b>팀 리더</b>를 맡은 경험이 있어, 좋은 팀원의 태도를 알고 실천하고 있습니다.
+            &nbsp; 회사에서 <b>팀 리더</b>를 맡아 업무 분담과 팀 매니징을 한 경험이 있습니다.
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;다양한 분야의 사회경험을 바탕으로 <b>커뮤니케이션</b>과 <b>팀 적응</b>에 자신 있습니다.
+            &nbsp; 다양한 분야의 사회경험을 바탕으로 <b>유연하고 원활한 커뮤니케이션</b>에 자신 있어요!
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;<b>성실하고 꾸준히 노력</b>하는 성격이고, 블로그와 깃허브 기록으로 확인하실 수 있습니다.
+            &nbsp; <b>근성있고 노력하는 성격</b>이고, 블로그와 깃허브 기록으로 확인하실 수 있습니다.
           </DescriptionList>
           <DescriptionList>
             <FontAwesomeIcon icon={faCheck} size="xs" />
-            &nbsp;<b>빠르게 습득</b>하고 <b>문제해결에 적극적</b>으로 나서서 팀 프로젝트 당시 별명이 행동대장이었습니다.
+            &nbsp; <b>빠르게 습득</b>하고 <b>문제해결</b>에 적극적으로 나서서 별명이 <b>행동대장</b>이예요.
+          </DescriptionList>
+          <DescriptionList>
+            <FontAwesomeIcon icon={faCheck} size="xs" />
+            &nbsp; 좋은 코드 뿐만 아니라 <b>비지니스적 임팩트</b>를 고려하는 개발자가 되고 싶어요!
           </DescriptionList>
         </Description>
         <Contact>
