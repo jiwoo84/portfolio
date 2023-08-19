@@ -54,11 +54,9 @@ Next.js의 image 태그를 이용하고, 이미지의 확장자 변경 및 용�
 
 이를 바탕으로 엘리먼트를 제공하는 프레임워크 flowbite를 함께 사용했습니다.
 
-하지만 가독성을 해치고 **리액트 컴포넌트의 장점**이 사라지는 것 같아
+ **리액트 컴포넌트의 장점**을 살리기 위해 styled-component를 함께 결합한 tailwind-styled-component를 사용했습니다.
 
-styled-component를 함께 결합한 tailwind-styled-component를 사용했습니다.
-
-그 결과 PostCSS를 적용하여 JS파일 안에서 스타일 관리를 하면서, 컴포넌트 단위의 설계도 가능했습니다.
+그 결과 JS파일 안에서 스타일 관리를 하면서, 컴포넌트 단위의 설계도 가능했습니다.
 
 구현하던 중, 초기 렌더링 시 스타일이 렌더링 된 채로 전달되지 않는 문제가 발생하여 CSS파일도 SSR 될 수 있도록 처리했습니다.
 
@@ -66,7 +64,7 @@ styled-component를 함께 결합한 tailwind-styled-component를 사용했습�
 
 ### ✅ 반응형 웹 사이트
 
-**좋은 UX를 위해 반응형 웹을 구현**했습니다.
+**UX를 위해 반응형 웹을 구현**했습니다.
 
 화면의 크기에 따라 다른 스타일을 부여하는 Tailwind의 sm, md, lg 속성을 사용했습니다.
 
@@ -169,7 +167,7 @@ React를 사용하여 프로젝트를 진행하며 컴포넌트 단위의 설계
 
 - 상단에 띄우기 위해 react-dom의 createPotal 사용
 - 전역에서 재사용 가능하도록 redux-tookit으로 열림 여부 상태값 관리
-- 모달 내부에서 관리할 상태값을 최소화하기 위해 react-modal 사용
+- 코드를 줄이고 정확한 모달 내부 기능 구현을 위해 react-modal 사용
 - 재사용성을 높이기 위해 prop로 가로, 세로 길이와 overflow 유형을 지정할 수 있게 구현
 - 포스팅: [[React] 모달 만들기 (React + redux-tookit + react-modal)](https://jiwoo84.tistory.com/158)
 
@@ -298,9 +296,6 @@ export const hugging = `
 
 - **html에 DOM element를 추가하는 최선의 방법?**
     ⇒ 동일한 요소를 여러 개 추가한다면 createElement + DocumentFragment이 가장 좋은 방법
-
-- **장바구니 정보는 어디 저장하는게 적합할까?**
-    ⇒ indexedDB가 localStorage보다 많은 양의 구조화된 데이터를 저장할 때 유용하기에 사용
 
 - **JS 파일을 type="module" 로 불러왔더니 함수가 호출되지 않는다?**
     ⇒ 모듈로 불러오면 해당 파일 만의 스코프가 생성되어 외부에서 접근할 수 없음

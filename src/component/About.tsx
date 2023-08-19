@@ -39,7 +39,7 @@ const About = () => {
           </DescriptionList>
         </Description>
         <Contact>
-          <ResumeBtn href="/resume.pdf" target="_blank" aria-label="resume-button">
+          <ResumeBtn href="#" target="_blank" aria-label="resume-button">
             Resume
           </ResumeBtn>
           <ContactBtns>
